@@ -1,0 +1,84 @@
+import { Meta } from '@storybook/addon-docs';
+import RuntimeLogo from './assets/runtime-records-logo.svg'
+
+<Meta title="Design Tokens" />
+
+<style>
+    {`
+    .subheading {
+      --mediumdark: '#999999';
+      font-weight: 900;
+      font-size: 13px;
+      color: #999;
+      letter-spacing: 6px;
+      line-height: 24px;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+      margin-top: 40px;
+    }
+
+
+
+        .tip {
+          display: inline-block;
+          border-radius: 1em;
+          font-size: 11px;
+          line-height: 12px;
+          font-weight: 700;
+          background: #E7FDD8;
+          color: #66BF3C;
+          padding: 4px 12px;
+          margin-right: 10px;
+          vertical-align: top;
+        }
+
+        .tip-wrapper {
+          font-size: 13px;
+          line-height: 20px;
+          margin-top: 40px;
+          margin-bottom: 40px;
+        }
+
+        .tip-wrapper code {
+          font-size: 12px;
+          display: inline-block;
+        }
+`}
+</style>
+
+<img src={ RuntimeLogo } style={{ height: 50 }}  alt=""/>
+
+<div className="subheading">Design Tokens</div>
+
+```json
+{
+  "unit": "rem",
+
+  "colors": [
+    { "type": "base", "color": "#000", "shades": [50] },
+    { "type": "highlight", "color": "#e84e0f", "shades": [25, 50] }
+  ],
+
+  "fonts": [
+    { "type": "main-text-regular", "uri": "'../fonts/rouna-regular-webfont'", "sizes": [20] },
+    { "type": "main-text-bold", "uri": "'../fonts/rouna-bold-webfont'", "sizes": [20]},
+    { "type": "menu-items", "uri":  "'../fonts/rouna-bold-webfont'", "sizes": [120]},
+    { "type": "main-text-link", "uri":  "'../fonts/rouna-bold-webfont'", "sizes": [16] }
+  ],
+
+  "headings": {
+    "type": "heading",
+    "uri": "'../fonts/rouna-bold-webfont'",
+    "variant": [
+      { "h1": 90 }, { "h2": 58 }, { "h3": 42 },
+      { "h4": 32 }, { "h5": 24 }, { "h6": 22 }
+    ]
+  },
+
+  "spacing": {
+    "small": 1,
+    "medium": 2,
+    "large": 3
+  }
+}
+```

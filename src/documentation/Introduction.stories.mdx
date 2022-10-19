@@ -1,0 +1,208 @@
+import { Meta } from '@storybook/addon-docs';
+
+import AtomicAtom from './assets/atomic-atom.svg'
+import AtomicMolecule from './assets/atomic-molecule.svg'
+import AtomicOrganism from './assets/atomic-organism.svg'
+import AtomicTemplate from './assets/atomic-template.svg'
+import AtomicPage from './assets/atomic-page.svg'
+import RuntimeLogo from './assets/runtime-records-logo.svg'
+
+<Meta title="Introduction" />
+
+<style>
+  {`
+    .subheading {
+      --mediumdark: '#999999';
+      font-weight: 900;
+      font-size: 13px;
+      color: #999;
+      letter-spacing: 6px;
+      line-height: 24px;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+      margin-top: 40px;
+    }
+
+    .link-list {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr;
+      row-gap: 10px;
+    }
+
+    @media (min-width: 620px) {
+      .link-list {
+        row-gap: 20px;
+        column-gap: 20px;
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media all and (-ms-high-contrast:none) {
+    .link-list {
+        display: -ms-grid;
+        -ms-grid-columns: 1fr 1fr;
+        -ms-grid-rows: 1fr 1fr;
+      }
+    }
+
+    .link-item {
+      display: block;
+      padding: 20px 30px 20px 15px;
+      border: 1px solid #00000010;
+      border-radius: 5px;
+      transition: background 150ms ease-out, border 150ms ease-out, transform 150ms ease-out;
+      color: #333333;
+      display: flex;
+      align-items: flex-start;
+    }
+
+    .link-item:hover {
+      border-color: #1EA7FD50;
+      transform: translate3d(0, -3px, 0);
+      box-shadow: rgba(0, 0, 0, 0.08) 0 3px 10px 0;
+    }
+
+    .link-item:active {
+      border-color: #1EA7FD;
+      transform: translate3d(0, 0, 0);
+    }
+
+    .link-item strong {
+      font-weight: 700;
+      display: block;
+      margin-bottom: 2px;
+    }
+
+    .link-item img {
+      height: 40px;
+      width: 40px;
+      margin-right: 15px;
+      flex: none;
+    }
+
+    .link-item span {
+      font-size: 14px;
+      line-height: 20px;
+    }
+
+    .tip {
+      display: inline-block;
+      border-radius: 1em;
+      font-size: 11px;
+      line-height: 12px;
+      font-weight: 700;
+      background: #E7FDD8;
+      color: #66BF3C;
+      padding: 4px 12px;
+      margin-right: 10px;
+      vertical-align: top;
+    }
+
+    .tip-wrapper {
+      font-size: 13px;
+      line-height: 20px;
+      margin-top: 40px;
+      margin-bottom: 40px;
+    }
+
+    .tip-wrapper code {
+      font-size: 12px;
+      display: inline-block;
+    }
+  `}
+</style>
+
+
+
+<img src={ RuntimeLogo } style={{ height: 50 }}  alt=""/>
+
+<div className="subheading">Briefing</div>
+<p>
+<strong>Runtime Records</strong> is both an online and offline record store
+    which specializes in new and second hand vinyl, cd's and cassettes.
+    They are an active member of "Record Store Day" and like this to
+    be prominent on the site.
+
+They want to completely redesign their online identity, a new style and an accompanying website.
+</p>
+<div className="subheading">Requirements</div>
+<ul class="">
+        <li>Modern and minimal look and feel</li>
+        <li>Recognizable as a record store</li>
+        <li>Both a new logo and a separately usable brand identifier</li>
+        <li>Fast and searchable website</li>
+        <li>Hassle-free checkout process</li>
+        <li>Fully responsive</li><li>Subtle animations</li>
+</ul>
+
+<div className="subheading">Storybook</div>
+
+Storybook helps you build UI components in isolation from your app's business logic, data, and context.
+That makes it easy to develop hard-to-reach states. Save these UI states as **stories** to revisit during development, testing, or QA.
+
+Browse example stories now by navigating to them in the sidebar.
+View their code in the `stories` directory to learn how they work.
+We recommend building UIs with a [**component-driven**](https://componentdriven.org) process starting with atomic components and ending with pages.
+
+<div className="subheading">Atomic Design</div>
+
+_Atomic design is not a linear process, but rather a mental
+model to help us think of our user interfaces as both a cohesive
+whole and a collection of parts at the same time.
+Each of the five stages plays a key role in the hierarchy
+of our interface design systems._
+
+<div className="tip-wrapper">
+    <span className="tip">Atomic Design</span>More information about Atomic Design&nbsp;
+    <a href="https://atomicdesign.bradfrost.com">https://atomicdesign.bradfrost.com</a>
+</div>
+
+<div className="link-list">
+    <div className="link-item">
+        <img src={AtomicAtom} alt="atoms" />
+        <span>
+      <strong>Atoms</strong>
+        Atoms are the basic building blocks of matter.
+        Applied to interfaces, atoms are our main JSX tags,
+        such as a form label, an input or a button.
+    </span>
+    </div>
+    <div className="link-item">
+        <img src={AtomicMolecule} alt="molecule" />
+        <span>
+      <strong>Molecules</strong>
+      Molecules can consist of several atoms, but not in a defined manner.
+      Molecules are consistent groupings of atoms.
+    </span>
+    </div>
+    <div className="link-item">
+        <img src={AtomicOrganism} alt="organisms" />
+        <span>
+      <strong>Organisms</strong>
+      Molecules give us some building blocks to work with, and we can now
+        combine them together to form organisms. Organisms are groups of
+        molecules joined together to form a relatively complex,
+        distinct section of an interface.
+    </span>
+    </div>
+    <div className="link-item">
+        <img src={AtomicPage} alt="pages" />
+        <span>
+      <strong>Pages</strong>
+        Pages are specific instances of templates (not available in this setup).
+        Here, placeholder content is replaced with real representative content
+        to give an accurate depiction of what a user will ultimately see.
+    </span>
+    </div>
+</div>
+
+
+
+<div className="subheading">Configure</div>
+
+
+<div className="tip-wrapper">
+  <span className="tip">Tip</span>Edit this Markdown in{' '}
+  <code>documentation/Introduction.stories.mdx</code>
+</div>
