@@ -1,16 +1,15 @@
-/// TODO: Apply styles based upon utility classes
 .Logo {
 
   .small {
-    height: 1.2rem;
+    height: var(--logo-size-small);
   }
 
   .medium {
-      height: 2.4rem;
+      height: var(--logo-size-medium);
   }
 
   .large {
-      height: 4rem;
+      height: var(--logo-size-large);
   }
 
 }

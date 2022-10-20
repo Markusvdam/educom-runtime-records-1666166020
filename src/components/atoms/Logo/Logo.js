@@ -6,13 +6,13 @@ import logoWhite from '../../../resources/images/logo-white.svg'
 const Logo = (props) => {
 
     const logo = props.exceptionType === "logo-white" ? logoWhite : logoBlack
-   // const size = props.size ? props.size : "small"
+    const size = props.size ? props.size : "small"
 
     return(
         <div data-testid={ props.testID } 
              data-object-type={ props.exceptionType ?? ""}
              className={ "Logo" }>
-            <img src={ logo } className={ props.size } alt="Logo" />
+            <img src={ logo } className={ size } alt="Logo" />
         </div>
   )
   

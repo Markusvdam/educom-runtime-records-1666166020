@@ -20,4 +20,38 @@
     //--#{$type}: '#{$type}';
     --#{$type}: '#{$q}';
   }
+
+  /*! Spacing */
+  @each $entry in $spacing {
+
+    $type: map-get($entry, "type");
+    $value: map-get($entry, "value");   
+    
+    $name: "--font-spacing-" + $type;
+    
+    #{$name} : #{$value};
+  }
+
+  /*! Font Sizes */
+  @each $entry in $font-sizes {
+
+    $type: map-get($entry, "type");
+    $value: map-get($entry, "value");   
+    
+    $name: "--font-size-" + $type;
+    
+    #{$name} : #{$value};
+  }
+
+  /*! Logo Sizes */
+  @each $entry in $logo-sizes {
+
+    $type: map-get($entry, "type");
+    $value: map-get($entry, "value");   
+    
+    $name: "--logo-size-" + $type;
+    
+    #{$name} : #{$value};
+  }
+
 }
