@@ -26,7 +26,8 @@ const exceptionClasses = [
     "standard",
     "genre", 
     "artist",
-    "songname"
+    "songname",
+    "price"
 ]
 
 

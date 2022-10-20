@@ -13,14 +13,12 @@ const LabelMeta = {
 
 const Template = (args) => <Label {...args} />
 
-const DefaultText = "Default Label"
-const DefaultExeptionType = "standard"
 
 export const DefaultLabel = Template.bind({})
 DefaultLabel.args = {
-    text: DefaultText,
+    text: 'Default Label',
     additionalClasses: [],
-    exceptionType: DefaultExeptionType
+    exceptionType: 'standard'
 }
 
 export const LabelGenre = Template.bind({})
@@ -28,6 +26,13 @@ LabelGenre.args = {
     text: "indie, math rock, noise rock",
     additionalClasses: [],
     exceptionType: 'genre'
+}
+
+export const PricePrice = Template.bind({})
+PricePrice.args = {
+    text: "22.50",
+    additionalClasses: [],
+    exceptionType: 'price'
 }
 
 export default LabelMeta

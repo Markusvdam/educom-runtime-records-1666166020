@@ -9,3 +9,16 @@
   color: var(--fg-highlight);
   font-size: var(--font-size-1);
 }
+
+.Label[data-type="price"] {
+  display: flex;
+  border-radius: 50px;
+  padding-top: 22px;
+  justify-content: center;
+  width: 65px;
+  height: 65px;
+  position: absolute;
+  color: var(--fg-white);
+  background-color: var(--fg-highlight);
+  font-family: 'main-text-bold', sans-serif;
+}

@@ -109,6 +109,10 @@ select {
   --bg-highlight-light-50: #fffaf7;
   --bg-highlight-dark-25: #702607;
   --bg-highlight-dark-50: black;
+  /*! white */
+  --bg-white: #fff;
+  --bg-white-light-50: white;
+  --bg-white-dark-50: gray;
   /*! Foreground Color */
   /*! base */
   --fg-base: #000;
@@ -120,6 +124,10 @@ select {
   --fg-highlight-light-50: #fffaf7;
   --fg-highlight-dark-25: #702607;
   --fg-highlight-dark-50: black;
+  /*! white */
+  --fg-white: #fff;
+  --fg-white-light-50: white;
+  --fg-white-dark-50: gray;
   /** FONT **/
   --main-text-regular: "main-text-regular";
   --main-text-bold: "main-text-bold";
@@ -177,6 +185,19 @@ select {
   background-color: var(--bg-highlight-dark-50);
 }
 
+/*! white */
+.bg-white {
+  background-color: var(--bg-white);
+}
+
+.bg-white-light-50 {
+  background-color: var(--bg-white-light-50);
+}
+
+.bg-white-dark-50 {
+  background-color: var(--bg-white-dark-50);
+}
+
 /*! Foreground Color */
 /*! base */
 .fg-base {
@@ -212,6 +233,19 @@ select {
   color: var(--fg-highlight-dark-50);
 }
 
+/*! white */
+.fg-white {
+  color: var(--fg-white);
+}
+
+.fg-white-light-50 {
+  color: var(--fg-white-light-50);
+}
+
+.fg-white-dark-50 {
+  color: var(--fg-white-dark-50);
+}
+
 .h1 {
   font-family: "heading";
   font-size: 5.625rem;
@@ -245,7 +279,7 @@ select {
 /*! Atoms */
 .Label {
   font-family: "main-text-regular", sans-serif;
-  padding: 14px;
+  padding: 10px;
 }
 
 /* Exception */
@@ -253,6 +287,19 @@ select {
   font-family: "main-text-bold", sans-serif;
   color: var(--fg-highlight);
   font-size: var(--font-size-1);
+}
+
+.Label[data-type=price] {
+  display: flex;
+  border-radius: 50px;
+  padding-top: 22px;
+  justify-content: center;
+  width: 65px;
+  height: 65px;
+  position: absolute;
+  color: var(--fg-white);
+  background-color: var(--fg-highlight);
+  font-family: "main-text-bold", sans-serif;
 }
 
 .Logo .small {
