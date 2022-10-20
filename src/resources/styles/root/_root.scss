@@ -40,7 +40,7 @@
     
     $name: "--font-size-" + $type;
     
-    #{$name} : #{$value};
+    #{$name} : #{pxToRem($value)};
   }
 
   /*! Logo Sizes */
@@ -51,7 +51,7 @@
     
     $name: "--logo-size-" + $type;
     
-    #{$name} : #{$value};
+    #{$name} : #{pxToRem($value)};
   }
 
 }

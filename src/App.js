@@ -19,7 +19,7 @@ const App = () => {
 
         <Row>
             <Col lg={11}>
-                <Logo />
+                <Logo size="small"/>
             </Col>
             <Col lg={1}>
                 <FontAwesomeIcon icon={faCoffee} style={{ fontSize: 40 }}/>

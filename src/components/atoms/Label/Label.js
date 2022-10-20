@@ -9,7 +9,7 @@ const Label = ({ text,
   const exType = exceptionType ?? ""
 
   return(
-        <span data-testid={ testID } data-object-type={exType}
+        <span data-testid={ testID } data-type={exType}
               className={ utils }>
             { text }
         </span>
@@ -17,22 +17,24 @@ const Label = ({ text,
   
 }
 
-
 const utilityClasses = [
     "red",
     "blue"
 ]
 
 const exceptionClasses = [
-    "button",
-    "regular"
+    "standard",
+    "genre", 
+    "artist",
+    "songname"
 ]
+
 
 Label.propTypes = {
     text: PropTypes.string.isRequired,
     exceptionType: PropTypes.oneOf(exceptionClasses),
     testID: PropTypes.string,
-    additionalClasses: PropTypes.arrayOf(PropTypes.oneOf(utilityClasses)),
+    additionalClasses: PropTypes.arrayOf(PropTypes.oneOf(utilityClasses))
 }
 
 export default Label

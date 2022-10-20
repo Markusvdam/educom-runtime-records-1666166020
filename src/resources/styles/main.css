@@ -126,9 +126,9 @@ select {
   --menu-items: "menu-items";
   --main-text-link: "main-text-link";
   /*! Spacing */
-  --font-spacing-small: 1px;
-  --font-spacing-medium: 2px;
-  --font-spacing-large: 3px;
+  --font-spacing-small: 1;
+  --font-spacing-medium: 2;
+  --font-spacing-large: 3;
   /*! Font Sizes */
   --font-size-1: 0.875rem;
   --font-size-2: 1.125rem;
@@ -136,8 +136,8 @@ select {
   --font-size-4: 2rem;
   --font-size-5: 2.625rem;
   /*! Logo Sizes */
-  --logo-size-small: 1.2rem;
-  --logo-size-medium: 2.4rem;
+  --logo-size-small: 1.25rem;
+  --logo-size-medium: 2.375rem;
   --logo-size-large: 4rem;
 }
 
@@ -245,7 +245,14 @@ select {
 /*! Atoms */
 .Label {
   font-family: "main-text-regular", sans-serif;
-  padding: 10px;
+  padding: 14px;
+}
+
+/* Exception */
+.Label[data-type=genre] {
+  font-family: "main-text-bold", sans-serif;
+  color: var(--fg-highlight);
+  font-size: var(--font-size-1);
 }
 
 .Logo .small {
