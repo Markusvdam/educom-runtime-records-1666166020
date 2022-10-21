@@ -529,6 +529,27 @@ select {
   cursor: pointer;
 }
 
+.Save {
+  background-color: var(--fg-base);
+  color: var(--fg-white);
+  justify-content: center;
+  flex: 1;
+  max-width: 56px;
+  min-width: 56px;
+  width: 56px;
+  height: 56px;
+  border-radius: 28px;
+}
+.Save .icon {
+  position: relative;
+  left: 15px;
+  top: 12px;
+}
+
+.Save:hover {
+  cursor: pointer;
+}
+
 /*! Molecules */ /*! Organisms */
 
 /*# sourceMappingURL=main.css.map */
