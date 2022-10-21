@@ -1,9 +1,10 @@
 .Hamburgermenu {
-  color: var(--fg-white);
+  color: var(--fg-base);
 }
 
 .Hamburgermenu:hover {
   cursor: pointer;
+  color: var(--fg-white);
 }
 
 .black{

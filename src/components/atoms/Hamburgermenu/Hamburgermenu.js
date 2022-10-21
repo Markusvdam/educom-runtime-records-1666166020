@@ -15,8 +15,8 @@ const Hamburgermenu = ({ color, testID}) => {
 }
 
 const color = [
-    "white",
-    "black"
+    "black",
+    "white"
 ]
 
 Hamburgermenu.propTypes = {

@@ -493,11 +493,12 @@ select {
 }
 
 .Hamburgermenu {
-  color: var(--fg-white);
+  color: var(--fg-base);
 }
 
 .Hamburgermenu:hover {
   cursor: pointer;
+  color: var(--fg-white);
 }
 
 .black {
@@ -527,6 +528,8 @@ select {
 
 .Filter:hover {
   cursor: pointer;
+  background-color: var(--fg-white);
+  color: var(--fg-base);
 }
 
 .Save {
@@ -548,6 +551,31 @@ select {
 
 .Save:hover {
   cursor: pointer;
+  background-color: var(--fg-white);
+  color: var(--fg-base);
+}
+
+.Delete {
+  background-color: var(--fg-white);
+  color: var(--fg-base);
+  justify-content: center;
+  flex: 1;
+  max-width: 50px;
+  min-width: 50px;
+  width: 50px;
+  height: 50px;
+  border-radius: 28px;
+}
+.Delete .icon {
+  position: relative;
+  left: 16px;
+  top: 15px;
+}
+
+.Delete:hover {
+  cursor: pointer;
+  background-color: var(--fg-base);
+  color: var(--fg-white);
 }
 
 /*! Molecules */ /*! Organisms */

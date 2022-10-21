@@ -16,7 +16,7 @@ const Template = (args) => <Hamburgermenu {...args} />
 export const DefaultHamburgermenu = Template.bind({})
 DefaultHamburgermenu.args = {
     testID: testID,
-    color: "white"
+    color: "black"
 }
 
 export default HamburgermenuMeta
