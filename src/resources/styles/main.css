@@ -618,6 +618,17 @@ select {
   outline: none;
 }
 
+.HomepageHeaderImage {
+  background-image: url("../../resources/images/homepageimage.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  display: block;
+  max-width: 100%;
+  max-height: 763px;
+  width: auto;
+  height: 763px;
+}
+
 /*! Molecules */ /*! Organisms */
 
 /*# sourceMappingURL=main.css.map */
