@@ -1,0 +1,9 @@
+.ProductImageWithDisc {
+  display: flex;
+  height: 368px;
+
+  .HalfDisc{
+    position: relative;
+    top: 20px;
+  }
+}
