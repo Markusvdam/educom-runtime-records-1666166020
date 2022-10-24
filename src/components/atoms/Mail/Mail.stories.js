@@ -2,7 +2,7 @@ import React from 'react'
 import Mail from './Mail'
 
 const MailMeta = {
-    title: "atoms/Mail",
+    title: "atoms/Icons/Mail",
     component: Mail,
     argTypes: {
         testID: { table: { disable: true } }

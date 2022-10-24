@@ -582,6 +582,42 @@ select {
   color: var(--fg-base-light-50);
 }
 
+.Discogs {
+  color: var(--fg-base-light-50);
+}
+
+.Facebook {
+  color: var(--fg-base-light-50);
+}
+
+.Twitter {
+  color: var(--fg-base-light-50);
+}
+
+.Instagram {
+  color: var(--fg-base-light-50);
+}
+
+.ArrowRight {
+  color: var(--fg-base);
+}
+
+.SearchFieldHome input[type=text] {
+  width: 800px;
+  height: 120px;
+  background-image: url("../../resources/images/favicon.png");
+  background-repeat: no-repeat;
+  background-size: 100px;
+  background-position: right 8px center;
+  border-radius: 100px;
+  -webkit-box-shadow: 0px 0px 10px 5px #979797;
+  box-shadow: 0px 0px 10px 5px #979797;
+  border: 0px;
+}
+.SearchFieldHome input:focus {
+  outline: none;
+}
+
 /*! Molecules */ /*! Organisms */
 
 /*# sourceMappingURL=main.css.map */
