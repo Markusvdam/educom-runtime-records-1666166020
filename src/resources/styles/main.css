@@ -578,6 +578,10 @@ select {
   color: var(--fg-white);
 }
 
+.Mail {
+  color: var(--fg-base-light-50);
+}
+
 /*! Molecules */ /*! Organisms */
 
 /*# sourceMappingURL=main.css.map */
