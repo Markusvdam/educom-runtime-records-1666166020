@@ -631,8 +631,18 @@ select {
   height: 763px;
 }
 
+.ProductImage {
+  visibility: hidden;
+}
+@media (min-width: 850px) {
+  .ProductImage {
+    visibility: visible;
+    width: 60%;
+  }
+}
 @media (min-width: 1080px) {
   .ProductImage {
+    visibility: visible;
     width: 368px;
     height: 368px;
   }
@@ -642,6 +652,9 @@ select {
   }
 }
 
+.HalfDisc {
+  visibility: hidden;
+}
 @media (min-width: 1080px) {
   .HalfDisc {
     background-image: url("../../resources/images/half-disc.png");
@@ -651,12 +664,18 @@ select {
     max-height: 347px;
     width: 121px;
     height: 347px;
+    visibility: visible;
   }
 }
 
 .ProductImageWithDisc {
   display: flex;
-  height: 368px;
+  height: 200px;
+}
+@media (min-width: 1080px) {
+  .ProductImageWithDisc {
+    height: 368px;
+  }
 }
 .ProductImageWithDisc .HalfDisc {
   position: relative;
@@ -751,29 +770,43 @@ select {
 /*! Organisms */
 .HompeageHeader {
   display: flex;
+  flex-wrap: wrap;
   background-image: url("../../resources/images/homepageimage.png");
   background-repeat: no-repeat;
   background-position: center;
   max-width: 100%;
-  max-height: 763px;
   width: auto;
-  height: 670px;
   align-items: center;
   justify-content: center;
+  height: 300px;
+}
+@media (min-width: 1080px) {
+  .HompeageHeader {
+    height: 670px;
+  }
 }
 .HompeageHeader .HompeageHeaderContent {
-  width: 500px;
   height: 369px;
   color: white;
+  text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.9);
+}
+@media (min-width: 510px) {
+  .HompeageHeader .HompeageHeaderContent {
+    width: 500px;
+  }
 }
 .HompeageHeader .ProductImageWithDisc {
   color: white;
 }
 .HompeageHeader .HompeageHeaderBottom {
-  padding-top: 155px;
   display: flex;
-  flex-flow: row wrap;
+  flex-wrap: wrap;
   justify-content: space-between;
+}
+@media (min-width: 1080px) {
+  .HompeageHeader .HompeageHeaderBottom {
+    padding-top: 155px;
+  }
 }
 .HompeageHeader .left-column, .HompeageHeader .right-column {
   flex: 0 0 100%;

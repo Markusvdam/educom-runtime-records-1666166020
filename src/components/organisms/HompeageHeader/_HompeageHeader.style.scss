@@ -1,20 +1,27 @@
 .HompeageHeader {
   display: flex;
+  flex-wrap: wrap;
   background-image: url('../../resources/images/homepageimage.png');
   background-repeat: no-repeat;
   background-position: center;
-  //display: block;
   max-width:100%;
-  max-height:763px;
+  //max-height:763px;
   width: auto;
-  height: 670px;
   align-items: center;
   justify-content: center;
 
+  height: 300px;
+  @media (min-width: 1080px) {
+    height: 670px;
+  }
+
   .HompeageHeaderContent{
-    width: 500px;
+    @media (min-width: 510px) {
+      width: 500px;
+    }
     height: 369px;
     color: white;
+    text-shadow: 0px 0px 4px rgba(0,0,0,0.9);
   }
 
   .ProductImageWithDisc{
@@ -22,9 +29,11 @@
   }
 
   .HompeageHeaderBottom{
-    padding-top: 155px;
+    @media (min-width: 1080px) {
+      padding-top: 155px;
+    }
     display: flex;
-    flex-flow: row wrap;
+    flex-wrap: wrap;
     justify-content: space-between;
   }
 

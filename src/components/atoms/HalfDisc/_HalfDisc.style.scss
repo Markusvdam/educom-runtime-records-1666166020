@@ -1,4 +1,7 @@
 .HalfDisc {
+
+  visibility: hidden;
+
   @media (min-width: 1080px) {
     background-image: url('../../resources/images/half-disc.png');
     background-repeat: no-repeat;
@@ -7,5 +10,6 @@
     max-height:347px;
     width: 121px;
     height: 347px;
+    visibility:visible;
   }
 }

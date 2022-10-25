@@ -1,6 +1,10 @@
 .ProductImageWithDisc {
   display: flex;
-  height: 368px;
+  height: 200px;
+
+  @media (min-width: 1080px) {
+    height: 368px;
+  }
 
   .HalfDisc{
     position: relative;
