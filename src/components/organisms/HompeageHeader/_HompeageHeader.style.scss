@@ -1,0 +1,49 @@
+.HompeageHeader {
+  display: flex;
+  background-image: url('../../resources/images/homepageimage.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  //display: block;
+  max-width:100%;
+  max-height:763px;
+  width: auto;
+  height: 700px;
+  align-items: center;
+  justify-content: center;
+
+  .HompeageHeaderContent{
+    width: 510px;
+    color: white;
+  }
+
+  .ProductImageWithDisc{
+    color: white;
+  }
+
+  .HompeageHeaderBottom{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
+
+  .left-column, .right-column{
+    flex: 0 0 100%;
+    padding: 10px 0;
+  }
+  
+  .left-column, .right-column{
+    text-align: left;
+  }
+  
+  @media screen and (min-width: 600px){
+    
+    .left-column, .right-column{
+      flex: 0 0 48%;
+    }
+  
+    .right-column{
+      text-align:right;
+      padding-right: 10px;
+    }
+  }
+}

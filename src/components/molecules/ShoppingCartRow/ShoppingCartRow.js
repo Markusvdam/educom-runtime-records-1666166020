@@ -31,7 +31,7 @@ const info = [
 
 ShoppingCartRow.propTypes = {
     testID: PropTypes.string,
-    imageURL: PropTypes.oneOf(info)
+    productInfo: PropTypes.oneOf(info)
 
 }
 

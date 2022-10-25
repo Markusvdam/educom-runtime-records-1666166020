@@ -744,4 +744,44 @@ select {
   background-color: black;
 }
 
-/*! Organisms *//*# sourceMappingURL=main.css.map */
+/*! Organisms */
+.HompeageHeader {
+  display: flex;
+  background-image: url("../../resources/images/homepageimage.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  max-width: 100%;
+  max-height: 763px;
+  width: auto;
+  height: 700px;
+  align-items: center;
+  justify-content: center;
+}
+.HompeageHeader .HompeageHeaderContent {
+  width: 510px;
+  color: white;
+}
+.HompeageHeader .ProductImageWithDisc {
+  color: white;
+}
+.HompeageHeader .HompeageHeaderBottom {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+.HompeageHeader .left-column, .HompeageHeader .right-column {
+  flex: 0 0 100%;
+  padding: 10px 0;
+}
+.HompeageHeader .left-column, .HompeageHeader .right-column {
+  text-align: left;
+}
+@media screen and (min-width: 600px) {
+  .HompeageHeader .left-column, .HompeageHeader .right-column {
+    flex: 0 0 48%;
+  }
+  .HompeageHeader .right-column {
+    text-align: right;
+    padding-right: 10px;
+  }
+}/*# sourceMappingURL=main.css.map */
