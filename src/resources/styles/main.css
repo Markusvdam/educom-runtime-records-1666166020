@@ -659,4 +659,20 @@ select {
   top: 20px;
 }
 
+.SearchHomepageFilter {
+  display: flex;
+}
+.SearchHomepageFilter .Filter {
+  position: relative;
+  left: 30px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.SearchHomepageFilter .Save {
+  position: relative;
+  top: 50%;
+  left: 50px;
+  transform: translateY(-50%);
+}
+
 /*! Organisms *//*# sourceMappingURL=main.css.map */
