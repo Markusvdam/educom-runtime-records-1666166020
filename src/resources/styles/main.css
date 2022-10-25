@@ -703,4 +703,45 @@ select {
   max-width: 400px;
 }
 
+.ShoppingCartRow {
+  max-width: 1050px;
+}
+.ShoppingCartRow .ShoppingCartRow1 {
+  display: flex;
+  height: 175px;
+  gap: 30px;
+}
+.ShoppingCartRow .ShoppingCartRow1 .ProductImage {
+  height: 170px;
+  width: 170px;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.ShoppingCartRow .ShoppingCartRow1 img {
+  max-width: 170px;
+  max-height: 170px;
+}
+.ShoppingCartRow .ShoppingCartRow1 .info {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.ShoppingCartRow .ShoppingCartRow1 .Label {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.ShoppingCartRow .ShoppingCartRow1 .Delete {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.ShoppingCartRow .hrCart {
+  height: 2px;
+  border-width: 0;
+  color: black;
+  background-color: black;
+}
+
 /*! Organisms *//*# sourceMappingURL=main.css.map */
