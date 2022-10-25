@@ -9,6 +9,8 @@ import ButtonAdd from './../../atoms/ButtonAdd'
 const HompeageHeader = ({ testID, productInfo}) => {
 
     const utils = ["HompeageHeader"].join(" ")
+    const textButtonRead = "Read more"
+    const textButtonAdd = "Add"
 
     return(
         <div data-testid={ testID } className={ utils }>
@@ -18,8 +20,8 @@ const HompeageHeader = ({ testID, productInfo}) => {
                 <p>{productInfo.description}</p>
                 <Label exceptionType='genre' text={productInfo.genre}/>
                 <div className="HompeageHeaderBottom">
-                    <div className="left-column"><ButtonAdd /></div>
-                    <div className="right-column"><Button /></div>
+                    <div className="left-column"><ButtonAdd text={textButtonAdd}/></div>
+                    <div className="right-column"><Button text={textButtonRead}/></div>
                 </div>
             </div>
             <div>

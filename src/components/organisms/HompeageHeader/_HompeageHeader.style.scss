@@ -7,12 +7,13 @@
   max-width:100%;
   max-height:763px;
   width: auto;
-  height: 700px;
+  height: 670px;
   align-items: center;
   justify-content: center;
 
   .HompeageHeaderContent{
-    width: 510px;
+    width: 500px;
+    height: 369px;
     color: white;
   }
 
@@ -21,6 +22,7 @@
   }
 
   .HompeageHeaderBottom{
+    padding-top: 155px;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
@@ -28,7 +30,6 @@
 
   .left-column, .right-column{
     flex: 0 0 100%;
-    padding: 10px 0;
   }
   
   .left-column, .right-column{
@@ -43,7 +44,24 @@
   
     .right-column{
       text-align:right;
-      padding-right: 10px;
+      padding-right: 20px;
     }
   }
+
+  .btx-animate .btx-text {
+    color: var(--fg-white);
+  }
+
+  .btx-payoff {
+    background-color: var(--fg-white);
+  }
+
+  .btx-animate .btx-icon:after {
+    color: var(--fg-white);
+  }
+
+  .btx-payoff .icon{
+    color: var(--fg-black);
+  }
+
 }
