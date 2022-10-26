@@ -1,0 +1,50 @@
+.ProductCard {
+  background-color: var(--fg-white);
+  position: relative;
+  max-width: 350px;
+
+  .ProductCardImage{
+    border-radius: 0.8rem;
+    overflow: hidden !important;
+  }
+
+  .Label{
+    top: -32px;
+    left: 317px;
+  }
+
+  .ProductCardContent{
+
+    .Label{
+      text-align: right;
+    }
+
+    .ProductCardTitle{
+      text-align: left;
+      color: var(--fg-base);
+      font-family: 'main-text-bold', sans-serif;
+      font-size: var(--font-size-4);
+      display: block;
+      max-width: 97%;
+      white-space: nowrap;
+      overflow: hidden !important;
+      text-overflow: ellipsis;
+    }
+
+    .ProductCardBottom{
+      position: relative;
+      height: 30px;
+      align-items: center;
+      display: flex;
+      .ProductCardArtist {
+        color: var(--fg-base-light-50);
+        font-size: var(--font-size-1);
+        font-family: 'main-text-bold', sans-serif;
+      }
+      .ProductCardAdd{
+        margin-top: -30px;
+        margin-left: 60px;
+      }
+    }
+  }
+}

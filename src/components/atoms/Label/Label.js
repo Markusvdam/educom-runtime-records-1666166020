@@ -11,7 +11,7 @@ const Label = ({ text,
   return(
         <span data-testid={ testID } data-type={exType}
               className={ utils }>
-            { text }
+            <p>{text}</p>
         </span>
   )
   
