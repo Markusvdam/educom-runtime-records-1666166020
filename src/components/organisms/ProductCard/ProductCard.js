@@ -5,8 +5,6 @@ import ProductImage from '../../atoms/ProductImage'
 import ButtonAdd from '../../atoms/ButtonAdd'
 
 
-
-/// TODO: Define props
 const ProductCard = ({ testID, productInfo}) => {
 
     const utils = ["ProductCard"].join(" ")

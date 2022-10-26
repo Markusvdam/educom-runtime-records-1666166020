@@ -1,1 +1,1 @@
-export { default } from './HompeageHeader'
+export { default } from './ProductCard'
