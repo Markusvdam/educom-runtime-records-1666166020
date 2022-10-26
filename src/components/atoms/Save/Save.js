@@ -10,7 +10,7 @@ const Save = ({ testID}) => {
     return(
         <div data-testid={ testID } className={ utils }>
             <div className="icon">
-            <FontAwesomeIcon icon={faSave} style={{ fontSize: 30 }}/>
+            <FontAwesomeIcon icon={faSave} />
             </div>
         </div>
     )

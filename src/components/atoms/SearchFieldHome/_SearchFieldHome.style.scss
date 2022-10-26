@@ -1,10 +1,30 @@
 .SearchFieldHome {
   input[type=text] {
-    width: 800px;
-    height: 120px;
+
     background-image: url('../../resources/images/favicon.png');
     background-repeat: no-repeat;
-    background-size: 100px;
+    background-size: 35px;
+    background-position: right 8px center;
+
+    width: 220px;
+    height: 30px;
+
+    @media (min-width: 410px) {
+      background-size: 50px;
+      width: 300px;
+      height: 60px;
+    }
+    @media (min-width: 800px) {
+      background-size: 100px;
+      height: 120px;
+      width: 550px
+    }
+    @media (min-width: 1080px) {
+      background-size: 100px;
+      width: 800px;
+    }
+    background-image: url('../../resources/images/favicon.png');
+    background-repeat: no-repeat;
     background-position: right 8px center;
     border-radius: 100px;
     -webkit-box-shadow: 0px 0px 10px 5px #979797; 
