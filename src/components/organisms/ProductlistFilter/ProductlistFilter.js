@@ -15,6 +15,7 @@ const ProductlistFilter = ({ testID, productData, onChangeSearch}) => {
     }, [page])
 
     useEffect(()=>{
+        setPage(1)
         setSliced(productData.slice((page-1)*8, page*8))
     }, [productData])
 

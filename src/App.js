@@ -25,8 +25,14 @@ const App = () => {
 
   return(
     <Container fluid>
-      <>{searchTerm}</>
+      <center>
+      <h1> - - - header  - - - </h1>
+      <p>&nbsp;</p>
+      <h1> - - - banner  - - - </h1>
+      <p>&nbsp;</p><p>&nbsp;</p>
+      </center>
 
+      
         { isLoaded ? (
           <ProductlistFilter productData={data.filter((val)=>{
             if (searchTerm == ""){
@@ -41,12 +47,14 @@ const App = () => {
             }
           })
           
-          
           } onChangeSearch={onChangeSearch}>
           </ProductlistFilter>
           ) : (
             <h1>Loading...</h1>
           )}
+
+      <p>&nbsp;</p><p>&nbsp;</p>
+      <center><h1> - - - footer  - - - </h1></center>
 
     </Container>
   )
