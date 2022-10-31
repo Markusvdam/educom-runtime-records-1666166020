@@ -1,20 +1,20 @@
 import React from 'react'
-import Productlist from './Productlist'
+import PaginationShow from './PaginationShow'
 
-const ProductlistMeta = {
-    title: "organisms/Productlist",
-    component: Productlist,
+const PaginationShowMeta = {
+    title: "atoms/PaginationShow",
+    component: PaginationShow,
     argTypes: {
         testID: { table: { disable: true } },
-        productData: { name: "Data" }
+        productData: { name: "Data:" }
     }
 }
 
-const testID = "Productlist-" + Math.floor(Math.random() * 90000) + 10000
-const Template = (args) => <Productlist {...args} />
+const testID = "PaginationShow-" + Math.floor(Math.random() * 90000) + 10000
+const Template = (args) => <PaginationShow {...args} />
 
-export const DefaultProductlist = Template.bind({})
-DefaultProductlist.args = {
+export const DefaultPaginationShow = Template.bind({})
+DefaultPaginationShow.args = {
     testID: testID,
     productData:     
     [
@@ -47,4 +47,4 @@ DefaultProductlist.args = {
     ]
 }
 
-export default ProductlistMeta
+export default PaginationShowMeta

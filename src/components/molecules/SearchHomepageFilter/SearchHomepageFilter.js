@@ -4,13 +4,13 @@ import SearchFieldHome from './../../atoms/SearchFieldHome';
 import Filter from './../../atoms/Filter';
 import Save from './../../atoms/Save';
 
-const SearchHomepageFilter = ({ testID}) => {
+const SearchHomepageFilter = ({ testID, onChangeSearch}) => {
 
     const utils = ["SearchHomepageFilter"].join(" ")
 
     return(
         <div data-testid={ testID } className={ utils }>
-            <div><SearchFieldHome /></div>
+            <div><SearchFieldHome onChangeSearch={onChangeSearch}/></div>
             <div><Filter /> </div>
             <div><Save /> </div>
         </div>

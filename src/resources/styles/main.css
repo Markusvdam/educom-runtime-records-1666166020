@@ -843,6 +843,9 @@ select {
   border-radius: 0.8rem;
   overflow: hidden !important;
 }
+.ProductCard .ProductCardImage img {
+  height: 350px;
+}
 .ProductCard .Label {
   top: -32px;
   left: 317px;
