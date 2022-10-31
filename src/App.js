@@ -32,7 +32,11 @@ const App = () => {
             if (searchTerm == ""){
               return val
             }
-            else if (val.data.artist.toLowerCase().includes(searchTerm.toLowerCase())){
+            else if (
+                val.data.artist.toLowerCase().includes(searchTerm.toLowerCase()) ||
+                val.data.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
+                val.data.genre.toLowerCase().includes(searchTerm.toLowerCase())
+              ){
               return val
             }
           })
