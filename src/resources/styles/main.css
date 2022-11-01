@@ -928,17 +928,50 @@ select {
 
 .Footer {
   display: flex;
+  flex-wrap: wrap;
+  grid-template-columns: repeat(4, minmax(350px, 1fr));
+  margin: auto;
+  font-family: "main-text-bold", sans-serif;
+  line-height: var(--font-spacing-large);
+}
+.Footer .FooterItem {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 110px;
+  padding-bottom: 55px;
+  min-width: 350px;
+  grid-auto-flow: row;
+  letter-spacing: 1px;
+}
+.Footer .FooterItem ul {
+  margin-top: 10px;
+  list-style: none;
+  padding: 0;
+}
+.Footer .FooterItem li {
+  display: flex;
+  gap: 10px;
+}
+.Footer .FooterItem .FooterItemImg {
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: 0;
+}
+
+.ProductpageItem {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  width: auto;
+}
+.ProductpageItem .ProductpageItemRight {
+  min-width: 320px;
+  max-width: 650px;
+}
+.ProductpageItem .ProductpageItemRightBottom {
+  display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
-}
-.Footer .FooterInfo {
-  margin: 130px;
-  display: flex;
-  gap: 50px;
-}
-.Footer .FooterLogo {
-  margin: 130px;
-  display: flex;
-}
-.Footer .FooterBlock {
-  width: 420px;
 }/*# sourceMappingURL=main.css.map */

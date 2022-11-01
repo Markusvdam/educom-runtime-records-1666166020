@@ -1,16 +1,37 @@
 .Footer {
   display: flex;
-  justify-content: space-between;
-  .FooterInfo {
-    margin: 130px;
-    display: flex;
-    gap: 50px;
-  }
-  .FooterLogo {
-    margin: 130px;
-    display: flex;
-  }
-  .FooterBlock {
-    width: 420px;
+  flex-wrap: wrap;
+  grid-template-columns: repeat(4 ,minmax(350px, 1fr));
+  margin: auto;
+  font-family: "main-text-bold", sans-serif;
+  line-height: var(--font-spacing-large);
+
+  .FooterItem{
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 110px;
+    padding-bottom: 55px;
+    min-width: 350px;
+    grid-auto-flow: row;
+    letter-spacing: 1px;
+
+    ul{
+      margin-top: 10px;
+      list-style: none;
+      padding: 0;
+    }
+
+    li{
+      display: flex;
+      gap: 10px;
+    }
+
+    .FooterItemImg{
+      margin-top: 10px;
+      margin-left: auto; 
+      margin-right: 0;
+    }
   }
 }
