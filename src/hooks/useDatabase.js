@@ -13,7 +13,6 @@ const useDatabase = (content) => {
         const unsubscribe = onSnapshot(q, (querySnapshot) => {
             
             const queryResults = []
-
             
             querySnapshot.forEach((doc) => {
                 queryResults.push({ 

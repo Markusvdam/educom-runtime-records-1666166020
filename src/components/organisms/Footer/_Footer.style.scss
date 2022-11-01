@@ -1,0 +1,15 @@
+.Footer {
+  display: flex;
+  justify-content: space-between;
+  .FooterInfo {
+    margin: 140px;
+    display: flex;
+  }
+  .FooterLogo {
+    margin: 140px;
+    display: flex;
+  }
+  .FooterBlock {
+    width: 300px;
+  }
+}

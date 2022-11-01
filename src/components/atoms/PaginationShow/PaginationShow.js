@@ -2,12 +2,16 @@ import { useState, useEffect } from 'react'
 import PropTypes from 'prop-types'
 import Pagination from 'react-bootstrap/Pagination'
 
-const PaginationShow = ({ testID, currentPage, productData, onChangePage}) => {
+const PaginationShow = ({ testID, currentPage, pageCount, onChangePage}) => {
 
     const utils = ["PaginationShow"].join(" ")
     let active = currentPage;
-    let pagesCount = Math.ceil(productData.length/8)
+    let pagesCount = pageCount
     let pages = [];
+
+    useEffect(()=>{
+        pagesCount = pageCount
+    }, [pageCount])
 
     for (let number = 1; number <= pagesCount; number++) {
         pages.push(

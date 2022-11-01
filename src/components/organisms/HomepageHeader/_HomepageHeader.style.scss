@@ -1,11 +1,11 @@
-.HompeageHeader {
+.HomepageHeader {
   display: flex;
   flex-wrap: wrap;
   background-image: url('../../resources/images/homepageimage.png');
   background-repeat: no-repeat;
   background-position: center;
   max-width:100%;
-  //max-height:763px;
+  ///max-height:763px;
   width: auto;
   align-items: center;
   justify-content: center;
@@ -15,7 +15,7 @@
     height: 670px;
   }
 
-  .HompeageHeaderContent{
+  .HomepageHeaderContent{
     @media (min-width: 510px) {
       width: 500px;
     }
@@ -28,9 +28,9 @@
     color: white;
   }
 
-  .HompeageHeaderBottom{
+  .HomepageHeaderBottom{
     @media (min-width: 1080px) {
-      padding-top: 155px;
+      //padding-top: 155px;
     }
     display: flex;
     flex-wrap: wrap;

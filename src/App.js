@@ -9,52 +9,33 @@ import Col from 'react-bootstrap/Col';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCoffee } from '@fortawesome/free-solid-svg-icons'
 
-import Logo from './components/atoms/Logo'
+import TopHeader from './components/organisms/TopHeader'
+import HomepageHeader from './components/organisms/HomepageHeader'
 import ProductlistFilter from './components/organisms/ProductlistFilter'
+import Footer from './components/organisms/Footer'
 import { waitFor } from "@testing-library/react";
 import { async } from "@firebase/util";
 
 const App = () => {
 
   const [data, isLoaded] = useDatabase('records')
-  const [searchTerm, setSearchTerm] = useState("")
-
-  function onChangeSearch(event) {
-    setSearchTerm(event.target.value)
-  }
 
   return(
     <Container fluid>
-      <center>
-      <h1> - - - header  - - - </h1>
-      <p>&nbsp;</p>
-      <h1> - - - banner  - - - </h1>
-      <p>&nbsp;</p><p>&nbsp;</p>
-      </center>
+      <TopHeader />
 
-      
-        { isLoaded ? (
-          <ProductlistFilter productData={data.filter((val)=>{
-            if (searchTerm == ""){
-              return val
-            }
-            else if (
-                val.data.artist.toLowerCase().includes(searchTerm.toLowerCase()) ||
-                val.data.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
-                val.data.genre.toLowerCase().includes(searchTerm.toLowerCase())
-              ){
-              return val
-            }
-          })
-          
-          } onChangeSearch={onChangeSearch}>
-          </ProductlistFilter>
-          ) : (
-            <h1>Loading...</h1>
-          )}
+      { isLoaded ? (
+        <>
+        <HomepageHeader productInfo={data[3].data}/>
+        <p>&nbsp;</p><p>&nbsp;</p>
+        <ProductlistFilter productData={data} />
+        </>
+        ) : (
+          <h1>Loading...</h1> 
+        )
+      }
 
-      <p>&nbsp;</p><p>&nbsp;</p>
-      <center><h1> - - - footer  - - - </h1></center>
+      <Footer />
 
     </Container>
   )
