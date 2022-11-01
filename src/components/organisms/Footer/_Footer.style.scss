@@ -2,14 +2,15 @@
   display: flex;
   justify-content: space-between;
   .FooterInfo {
-    margin: 140px;
+    margin: 130px;
     display: flex;
+    gap: 50px;
   }
   .FooterLogo {
-    margin: 140px;
+    margin: 130px;
     display: flex;
   }
   .FooterBlock {
-    width: 300px;
+    width: 420px;
   }
 }

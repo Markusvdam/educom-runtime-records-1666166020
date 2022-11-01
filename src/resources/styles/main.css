@@ -694,6 +694,12 @@ select {
   }
 }
 
+.PaginationShow {
+  justify-content: center;
+  justify-self: center;
+  justify-items: center;
+}
+
 .ProductImageWithDisc {
   display: flex;
   height: 200px;
@@ -907,9 +913,6 @@ select {
   max-width: 360px;
 }
 
-.ProductlistFilter {
-  display: grid;
-}
 .ProductlistFilter .SearchHomepageFilter {
   justify-content: center;
 }
@@ -919,6 +922,8 @@ select {
 }
 .ProductlistFilter .PaginationShow {
   justify-content: center;
+  justify-self: center;
+  justify-items: center;
 }
 
 .Footer {
@@ -926,13 +931,14 @@ select {
   justify-content: space-between;
 }
 .Footer .FooterInfo {
-  margin: 140px;
+  margin: 130px;
   display: flex;
+  gap: 50px;
 }
 .Footer .FooterLogo {
-  margin: 140px;
+  margin: 130px;
   display: flex;
 }
 .Footer .FooterBlock {
-  width: 300px;
+  width: 420px;
 }/*# sourceMappingURL=main.css.map */

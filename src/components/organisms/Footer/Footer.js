@@ -1,5 +1,7 @@
 import { useState, useEffect } from 'react'
 import PropTypes from 'prop-types'
+import recordstoreday from './../../../resources/images/record-store-day.png';
+import Logo from './../../atoms/Logo'
 
 const Footer = ({ testID }) => {
 
@@ -8,11 +10,11 @@ const Footer = ({ testID }) => {
     return(
         <div data-testid={ testID } className={ utils }>
             <div className="FooterInfo">
-                <div className="FooterBlock">SOCIALS</div>
-                <div className="FooterBlock">INFO</div>
+                <div className="FooterBlock"><Logo size="medium" exceptionType="logo-white"/></div>
+                <div className="FooterBlock"><h1>INFO</h1></div>
             </div>
             <div className="FooterLogo">
-                LOGO
+                <img src={recordstoreday} alt="Record Store Day Logo" />;
             </div>
         </div>
     )

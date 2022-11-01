@@ -1,5 +1,5 @@
 .ProductlistFilter {
-  display: grid;
+  //display: grid;
 
   .SearchHomepageFilter{
     justify-content: center;
@@ -12,6 +12,8 @@
 
   .PaginationShow{
     justify-content: center;
+    justify-self: center;
+    justify-items: center;
   }
 }
 
