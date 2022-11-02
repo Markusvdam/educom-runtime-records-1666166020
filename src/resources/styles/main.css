@@ -890,24 +890,29 @@ select {
 }
 
 .Productlist {
+  display: flex;
+  justify-content: center;
+}
+.Productlist .ProductlistContainer {
+  width: 100%;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   /*CSS Grid Stuff*/
 }
-.Productlist .product {
+.Productlist .ProductlistContainer .product {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.Productlist .products {
+.Productlist .ProductlistContainer .products {
   list-style-type: none;
   display: grid;
   grid-gap: 40px;
   grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
   grid-auto-flow: row;
 }
-.Productlist .product {
+.Productlist .ProductlistContainer .product {
   min-height: 405px;
   max-width: 360px;
 }
@@ -961,8 +966,12 @@ select {
 
 .ProductpageItem {
   display: flex;
+  justify-content: center;
+}
+.ProductpageItem .ProductpageItemContainer {
+  display: flex;
   position: relative;
-  max-width: 1080px;
+  max-width: 1200px;
 }
 .ProductpageItem .Label {
   top: -30px;

@@ -1,9 +1,14 @@
 .ProductpageItem {
   display: flex;
-  position: relative;
-  //flex-wrap: wrap;
-  //gap: 40px;
-  max-width: 1080px;
+  justify-content: center;
+
+  .ProductpageItemContainer{
+    display: flex;
+    position: relative;
+    //flex-wrap: wrap;
+    //gap: 40px;
+    max-width: 1200px;
+  }
 
   .Label{
     top: -30px;
@@ -33,6 +38,4 @@
       }
     }
   }
-
-
 }

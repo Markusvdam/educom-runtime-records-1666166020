@@ -11,21 +11,27 @@ const ProductpageItem = ({ testID, productInfo}) => {
 
     return(
         <div data-testid={ testID } className={ utils }>
-            <Label text={productInfo.price} exceptionType='price'/>
-            <div className="ProductpageItemLeft">
-                <img src={productInfo.imageURL} alt="Product picture" />
-            </div>
-
-            <div className="ProductpageItemRight">
-                <div>
-                    <h1>{productInfo.title}</h1>
-                    <h3>{productInfo.artist}</h3>
-                    <Label exceptionType='genre' text={productInfo.genre}/>
-                    <p>{productInfo.description}</p>
-                    <div className="ProductpageItemRightBottom">
-                    <div></div>
-                    <div className="ProductCardAdd"><div className="b"><ButtonAdd text={textButtonAdd}/></div></div>
+            <div className="ProductpageItemContainer">
+                <Label text={productInfo.price} exceptionType='price'/>
+                <div className="ProductpageItemLeft">
+                    <img src={productInfo.imageURL} alt="Product picture" />
                 </div>
+
+                <div className="ProductpageItemRight">
+                    <div>
+                        <h1>{productInfo.title}</h1>
+                        <h3>{productInfo.artist}</h3>
+                        <Label exceptionType='genre' text={productInfo.genre}/>
+                        <p>{productInfo.description}</p>
+                        <div className="ProductpageItemRightBottom">
+                            <div>
+
+                            </div>
+                            <div className="ProductCardAdd">
+                                <div className="b"><ButtonAdd text={textButtonAdd}/></div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

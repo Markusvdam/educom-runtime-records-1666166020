@@ -8,13 +8,15 @@ const Productlist = ({ testID, productData}) => {
 
     return(
         <div data-testid={ testID } className={ utils }>
-            <ul className="products">
-                {productData.map((item, i) => {     
-                    return (
-                        <li key={i} className="product"><ProductCard productInfo={item.data} /></li>
-                    ); 
-                 })}
-            </ul>
+            <div className="ProductlistContainer">
+                <ul className="products">
+                    {productData.map((item, i) => {     
+                        return (
+                            <li key={i} className="product"><ProductCard productInfo={item.data} /></li>
+                        ); 
+                    })}
+                </ul>
+            </div>
         </div>
     )
 
