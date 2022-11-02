@@ -1,35 +1,35 @@
 import { useState, useEffect } from 'react'
 import PropTypes from 'prop-types'
-import ProductImageWithDisc from './../../molecules/ProductImageWithDisc'
 import Label from './../../atoms/Label'
-import Button from './../../atoms/Button'
 import ButtonAdd from './../../atoms/ButtonAdd'
 
 /// TODO: Define props
-const HomepageHeader = ({ testID, productInfo}) => {
+const ProductpageItem = ({ testID, productInfo}) => {
 
-    const utils = ["HomepageHeader"].join(" ")
-    const textButtonRead = "Read more"
+    const utils = ["ProductpageItem"].join(" ")
     const textButtonAdd = "Add"
 
     return(
         <div data-testid={ testID } className={ utils }>
-            <div className="HomepageHeaderContent">
-                <h3 className="fg-base-light-50">{productInfo.artist}</h3>
-                <h1>{productInfo.title}</h1>
-                <p className="text">{productInfo.description}</p>
-                <Label exceptionType='genre' text={productInfo.genre}/>
-                <div className="HomepageHeaderBottom">
-                    <div className="left-column"><ButtonAdd text={textButtonAdd}/></div>
-                    <div className="right-column"><Button text={textButtonRead}/></div>
-                </div>
+            <Label text={productInfo.price} exceptionType='price'/>
+            <div className="ProductpageItemLeft">
+                <img src={productInfo.imageURL} alt="Product picture" />
             </div>
-            <div>
-                <ProductImageWithDisc imageURL={productInfo.imageURL}/>
+
+            <div className="ProductpageItemRight">
+                <div>
+                    <h1>{productInfo.title}</h1>
+                    <h3>{productInfo.artist}</h3>
+                    <Label exceptionType='genre' text={productInfo.genre}/>
+                    <p>{productInfo.description}</p>
+                    <div className="ProductpageItemRightBottom">
+                    <div></div>
+                    <div className="ProductCardAdd"><div className="b"><ButtonAdd text={textButtonAdd}/></div></div>
+                </div>
+                </div>
             </div>
         </div>
     )
-
 }
 
 const info = [
@@ -37,9 +37,9 @@ const info = [
     {imageURL: "https://sienaconstruction.com/wp-content/uploads/2017/05/test-image.jpg", title: "Another Shape of Psychedelic Mu…", artist: "Mythic Sunship", price: "29.50", genre: "post punk, indie, punk", description: "This blistering punk-rock debut from a 55-year-old veteran of the scene delivers urgent music for evergreen unease. These are weary, angry songs, crafted with an insatiable verve and an almost triumphant fury. "}
 ]
 
-HomepageHeader.propTypes = {
+ProductpageItem.propTypes = {
     testID: PropTypes.string,
     productInfo: PropTypes.oneOf(info)
 }
 
-export default HomepageHeader
+export default ProductpageItem

@@ -1,0 +1,38 @@
+.ProductpageItem {
+  display: flex;
+  position: relative;
+  //flex-wrap: wrap;
+  //gap: 40px;
+  max-width: 1080px;
+
+  .Label{
+    top: -30px;
+    left: -30px;
+    transform: scale(1.2);
+  }
+
+  .ProductpageItemLeft{
+    padding-right: 15px;
+    flex: 50%;
+    img{
+      width: 100%;
+    }
+  }
+
+  .ProductpageItemRight{
+    padding-left: 15px;
+    flex: 50%;
+
+    .ProductpageItemRightBottom{
+      display: flex;
+  
+      .ProductCardAdd{
+        position: absolute;
+        right: 150px;
+        bottom: 32px;
+      }
+    }
+  }
+
+
+}

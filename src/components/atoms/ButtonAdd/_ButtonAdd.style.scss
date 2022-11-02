@@ -58,14 +58,12 @@
 }
 .btx:hover .btx-animate .btx-text {
   opacity: 1;
-  margin-left: 90px;
 }
 .btx:hover .btx-animate .btx-icon {
   opacity: 1;
   margin-left: 10px;
 }
 .btx:hover .btx-animate {
-  padding-left: 80px;
   color: #E84E0F;
-  transition: all 0.3s ease;
-}
+  transition: all 0.3s ease;  
+} 

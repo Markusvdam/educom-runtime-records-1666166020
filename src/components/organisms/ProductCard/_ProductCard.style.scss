@@ -24,11 +24,12 @@
     }
 
     .ProductCardTitle{
+      margin-top: -12px;
       text-align: left;
       color: var(--fg-base);
       font-family: 'main-text-bold', sans-serif;
       font-size: var(--font-size-4);
-      display: block;
+      //display: block;
       max-width: 97%;
       white-space: nowrap;
       overflow: hidden !important;
@@ -36,19 +37,23 @@
     }
 
     .ProductCardBottom{
-      position: relative;
       height: 30px;
-      align-items: center;
       display: flex;
+      align-items: center;
       .ProductCardArtist {
         color: var(--fg-base-light-50);
         font-size: var(--font-size-1);
         font-family: 'main-text-bold', sans-serif;
       }
       .ProductCardAdd{
+        margin-left: auto;
+        margin-right: 150px;
         margin-top: -30px;
-        margin-left: 60px;
       }
+    }
+
+    .spacer{
+      height: 40px;
     }
   }
 }

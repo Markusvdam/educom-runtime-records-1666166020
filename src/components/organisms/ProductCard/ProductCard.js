@@ -21,8 +21,9 @@ const ProductCard = ({ testID, productInfo}) => {
                 <div className='ProductCardTitle'>{productInfo.title}</div>
                 <div className='ProductCardBottom'>
                     <div className='ProductCardArtist'>{productInfo.artist}</div>
-                    <div className='ProductCardAdd'><ButtonAdd text={textButtonAdd} /></div>
+                    <div className='ProductCardAdd'><ButtonAdd text={textButtonAdd}/></div>
                 </div>
+                <div className='spacer'></div>
             </div>
         </div>
     )

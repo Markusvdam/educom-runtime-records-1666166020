@@ -9,6 +9,7 @@
   width: auto;
   align-items: center;
   justify-content: center;
+  font-family: "main-text-bold", sans-serif;
 
   height: 300px;
   @media (min-width: 1080px) {
@@ -28,32 +29,28 @@
     color: white;
   }
 
+  .text{
+    font-family: "main-text-regular", sans-serif;
+  }
+
   .HomepageHeaderBottom{
     @media (min-width: 1080px) {
       //padding-top: 155px;
     }
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-  }
-
-  .left-column, .right-column{
-    flex: 0 0 100%;
   }
   
-  .left-column, .right-column{
-    text-align: left;
+  .right-column{
+    margin-left: auto;
+    margin-right: 0;
   }
   
   @media screen and (min-width: 600px){
-    
-    .left-column, .right-column{
-      flex: 0 0 48%;
-    }
   
     .right-column{
-      text-align:right;
-      padding-right: 20px;
+      margin-left: auto;
+      margin-right: 0;
     }
   }
 
