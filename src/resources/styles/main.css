@@ -967,6 +967,10 @@ select {
 .ProductpageItem {
   display: flex;
   justify-content: center;
+  font-family: "main-text-bold", sans-serif;
+}
+.ProductpageItem .text {
+  font-family: "main-text-regular", sans-serif;
 }
 .ProductpageItem .ProductpageItemContainer {
   display: flex;
@@ -984,6 +988,8 @@ select {
 }
 .ProductpageItem .ProductpageItemLeft img {
   width: 100%;
+  border-radius: 25px;
+  box-shadow: 10px 7px 31px -12px rgba(0, 0, 0, 0.75);
 }
 .ProductpageItem .ProductpageItemRight {
   padding-left: 15px;

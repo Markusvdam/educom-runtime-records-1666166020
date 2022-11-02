@@ -20,9 +20,9 @@ const ProductpageItem = ({ testID, productInfo}) => {
                 <div className="ProductpageItemRight">
                     <div>
                         <h1>{productInfo.title}</h1>
-                        <h3>{productInfo.artist}</h3>
+                        <h3 className="fg-base-light-50">{productInfo.artist}</h3>
                         <Label exceptionType='genre' text={productInfo.genre}/>
-                        <p>{productInfo.description}</p>
+                        <p className="text fg-base-light-50">{productInfo.description}</p>
                         <div className="ProductpageItemRightBottom">
                             <div>
 

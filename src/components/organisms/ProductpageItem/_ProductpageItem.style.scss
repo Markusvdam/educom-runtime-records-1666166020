@@ -1,6 +1,11 @@
 .ProductpageItem {
   display: flex;
   justify-content: center;
+  font-family: "main-text-bold", sans-serif;
+  
+  .text{
+    font-family: "main-text-regular", sans-serif;
+  }
 
   .ProductpageItemContainer{
     display: flex;
@@ -21,6 +26,10 @@
     flex: 50%;
     img{
       width: 100%;
+      border-radius: 25px;
+      -webkit-box-shadow: 10px 7px 31px -12px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 7px 31px -12px rgba(0,0,0,0.75);
+box-shadow: 10px 7px 31px -12px rgba(0,0,0,0.75);
     }
   }
 
