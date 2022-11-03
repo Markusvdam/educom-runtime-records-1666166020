@@ -882,6 +882,16 @@ select {
   display: flex;
   justify-content: space-between;
 }
+.TopHeader .right {
+  display: flex;
+  gap: 20px;
+}
+.TopHeader .right .Cart {
+  transform: scale(0.8);
+}
+.TopHeader .right .Hamburgermenu {
+  transform: scale(1.15);
+}
 
 .ProductCard {
   background-color: var(--fg-white);

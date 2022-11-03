@@ -5,4 +5,19 @@
   margin-bottom: 15px;
   display: flex;
   justify-content: space-between;
+
+  .left{
+    ///
+  }
+
+  .right{
+    display: flex;
+    gap: 20px;
+    .Cart{
+      transform: scale(0.8);
+    }
+    .Hamburgermenu{
+      transform: scale(1.15);
+    }
+  }
 }
