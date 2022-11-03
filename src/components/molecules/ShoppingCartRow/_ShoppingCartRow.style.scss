@@ -1,51 +1,55 @@
 .ShoppingCartRow {
-  max-width: 1050px;
+  display: flex;
+  justify-content: center;
 
-  .ShoppingCartRow1 {
-    display: flex;
-    height: 175px;
-    gap: 30px;
-
-    .ProductImage{
-      height: 170px;
-      width: 170px;
-      position: relative;
-      top: 50%;
-      -ms-transform: translateY(-50%);
-      transform: translateY(-50%);
+  .RowContainer {
+    max-width: 1200px;
+    @media (min-width: 900px) {
+      min-width: 820px;
     }
 
-    img{
-      max-width: 170px;
-      max-height: 170px; 
+    .h2{
+      margin-bottom: 50px;
     }
 
-    .info{
-      position: relative;
-      top: 50%;
-      -ms-transform: translateY(-50%);
-      transform: translateY(-50%);
-    }
+    .Row {
+      display: flex;
+      height: 175px;
+      gap: 30px;
+  
+      img{
+        max-width: 170px;
+        max-height: 170px; 
+        -webkit-box-shadow: 10px 7px 31px -12px rgba(17, 17, 17, 0.75);
+        -moz-box-shadow: 10px 7px 31px -12px rgba(17, 17, 17, 0.75);
+        box-shadow: 10px 7px 31px -12px rgba(17, 17, 17, 0.75);
+        border-radius: 15px;
+      }
 
-    .Label{
-      position: relative;
-      top: 50%;
-      -ms-transform: translateY(-50%);
-      transform: translateY(-50%);
+      .info{
+          padding-top: 40px;
+      }
+  
+      .Label{
+        position: relative;
+        top: 50%;
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+      }
+  
+      .Delete{
+        position: relative;
+        top: 50%;
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%); 
+      }
     }
-
-    .Delete{
-      position: relative;
-      top: 50%;
-      -ms-transform: translateY(-50%);
-      transform: translateY(-50%); 
+  
+    .hrCart{
+      height: 2px;
+      border-width:0;
+      color:black;
+      background-color:black;
     }
-  }
-
-  .hrCart{
-    height: 2px;
-    border-width:0;
-    color:black;
-    background-color:black;
   }
 }

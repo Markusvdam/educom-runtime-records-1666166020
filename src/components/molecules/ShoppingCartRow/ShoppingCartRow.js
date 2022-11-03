@@ -10,16 +10,23 @@ const ShoppingCartRow = ({ testID, productInfo}) => {
 
     return(
         <div className={ utils }>
-        <div data-testid={ testID } className="ShoppingCartRow1">
-            <div><ProductImage imageURL={productInfo.imageURL}/></div>
-            <div>
-                <h2>{productInfo.title}</h2>
-                <p>{productInfo.artist}</p>
+        <div data-testid={ testID } className="RowContainer">
+            <div className="Row">
+                
+                <div><img src={productInfo.imageURL}/></div>
+                
+                <div className="info">
+                    <h3 className="h3">{productInfo.title}</h3>
+                    <h4 className="h5 fg-base-light-50">{productInfo.artist}</h4>
+                </div>
+                <Label className="label" exceptionType='price' text={productInfo.price}/>
+                <Delete />
             </div>
-            <div><Label exceptionType='price' text={productInfo.price}/></div>
-            <div><Delete /></div>
+            <div>
+                <hr className="hrCart"></hr>
+            </div>
         </div>
-        <div><hr className="hrCart"></hr></div>
+        
         </div>
     )
 }

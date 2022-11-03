@@ -729,40 +729,45 @@ select {
 }
 
 .ShoppingCartRow {
-  max-width: 1050px;
+  display: flex;
+  justify-content: center;
 }
-.ShoppingCartRow .ShoppingCartRow1 {
+.ShoppingCartRow .RowContainer {
+  max-width: 1200px;
+}
+@media (min-width: 900px) {
+  .ShoppingCartRow .RowContainer {
+    min-width: 820px;
+  }
+}
+.ShoppingCartRow .RowContainer .h2 {
+  margin-bottom: 50px;
+}
+.ShoppingCartRow .RowContainer .Row {
   display: flex;
   height: 175px;
   gap: 30px;
 }
-.ShoppingCartRow .ShoppingCartRow1 .ProductImage {
-  height: 170px;
-  width: 170px;
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
-}
-.ShoppingCartRow .ShoppingCartRow1 img {
+.ShoppingCartRow .RowContainer .Row img {
   max-width: 170px;
   max-height: 170px;
+  box-shadow: 10px 7px 31px -12px rgba(17, 17, 17, 0.75);
+  border-radius: 15px;
 }
-.ShoppingCartRow .ShoppingCartRow1 .info {
+.ShoppingCartRow .RowContainer .Row .info {
+  padding-top: 40px;
+}
+.ShoppingCartRow .RowContainer .Row .Label {
   position: relative;
   top: 50%;
   transform: translateY(-50%);
 }
-.ShoppingCartRow .ShoppingCartRow1 .Label {
+.ShoppingCartRow .RowContainer .Row .Delete {
   position: relative;
   top: 50%;
   transform: translateY(-50%);
 }
-.ShoppingCartRow .ShoppingCartRow1 .Delete {
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
-}
-.ShoppingCartRow .hrCart {
+.ShoppingCartRow .RowContainer .hrCart {
   height: 2px;
   border-width: 0;
   color: black;
@@ -984,7 +989,7 @@ select {
 }
 .ProductpageItem .ProductpageItemLeft {
   padding-right: 15px;
-  flex: 50%;
+  flex: 45%;
 }
 .ProductpageItem .ProductpageItemLeft img {
   width: 100%;
@@ -993,13 +998,14 @@ select {
 }
 .ProductpageItem .ProductpageItemRight {
   padding-left: 15px;
-  flex: 50%;
+  flex: 55%;
 }
 .ProductpageItem .ProductpageItemRight .ProductpageItemRightBottom {
   display: flex;
 }
 .ProductpageItem .ProductpageItemRight .ProductpageItemRightBottom .ProductCardAdd {
   position: absolute;
-  right: 150px;
-  bottom: 32px;
+  right: 228px;
+  bottom: 45px;
+  transform: scale(1.5);
 }/*# sourceMappingURL=main.css.map */

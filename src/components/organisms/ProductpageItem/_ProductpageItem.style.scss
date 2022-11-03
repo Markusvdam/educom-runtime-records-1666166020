@@ -23,27 +23,28 @@
 
   .ProductpageItemLeft{
     padding-right: 15px;
-    flex: 50%;
+    flex: 45%;
     img{
       width: 100%;
       border-radius: 25px;
       -webkit-box-shadow: 10px 7px 31px -12px rgba(0,0,0,0.75);
--moz-box-shadow: 10px 7px 31px -12px rgba(0,0,0,0.75);
-box-shadow: 10px 7px 31px -12px rgba(0,0,0,0.75);
+      -moz-box-shadow: 10px 7px 31px -12px rgba(0,0,0,0.75);
+      box-shadow: 10px 7px 31px -12px rgba(0,0,0,0.75);
     }
   }
 
   .ProductpageItemRight{
     padding-left: 15px;
-    flex: 50%;
+    flex: 55%;
 
     .ProductpageItemRightBottom{
       display: flex;
   
       .ProductCardAdd{
         position: absolute;
-        right: 150px;
-        bottom: 32px;
+        right: 228px;
+        bottom: 45px;
+        transform: scale(1.5);
       }
     }
   }

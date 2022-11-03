@@ -15,13 +15,8 @@ const ProductImageWithDisc = ({ testID, imageURL}) => {
     )
 }
 
-const imageURLS = [
-    "https://sienaconstruction.com/wp-content/uploads/2017/05/test-image.jpg"
-]
-
 ProductImageWithDisc.propTypes = {
-    testID: PropTypes.string,
-    imageURL: PropTypes.oneOf(imageURLS)
+    testID: PropTypes.string
 }
 
 export default ProductImageWithDisc

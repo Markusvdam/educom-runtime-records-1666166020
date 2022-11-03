@@ -1,8 +1,8 @@
-import Container from 'react-bootstrap/Container';
-import TopHeader from './../components/organisms/TopHeader'
-import Productlist from './../components/organisms/Productlist'
-import Footer from './../components/organisms/Footer'
-import ProductpageItem from './../components/organisms/ProductpageItem'
+import Container from 'react-bootstrap/Container'
+import TopHeader from './../organisms/TopHeader'
+import Productlist from './../organisms/Productlist'
+import Footer from './../organisms/Footer'
+import ProductpageItem from './../organisms/ProductpageItem'
 
 const Productpage = ({data}) => {
 
