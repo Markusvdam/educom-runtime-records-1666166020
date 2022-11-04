@@ -498,7 +498,7 @@ select {
 
 .Hamburgermenu:hover {
   cursor: pointer;
-  color: var(--fg-white);
+  color: var(--fg-highlight);
 }
 
 .black {
@@ -734,6 +734,23 @@ select {
   cursor: pointer;
   background-color: var(--fg-white);
   color: var(--fg-base);
+}
+
+.Closemenu {
+  color: var(--fg-base);
+}
+
+.Closemenu:hover {
+  cursor: pointer;
+  color: var(--fg-highlight);
+}
+
+.black {
+  color: var(--fg-base);
+}
+
+.white {
+  color: var(--fg-white);
 }
 
 .ProductImageWithDisc {
@@ -1056,4 +1073,52 @@ select {
   right: 228px;
   bottom: 45px;
   transform: scale(1.5);
+}
+
+.Menu .navbar {
+  height: 80px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.Menu .menu-bars {
+  padding: 10px;
+  background: none;
+}
+.Menu .nav-menu {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  top: -100%;
+  left: 0;
+  transition: 1000ms;
+  background-color: white;
+}
+.Menu .nav-menu-active {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  transition: 1000ms;
+  background-color: white;
+}
+.Menu .navbar-toggle {
+  width: 500px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  height: 80px;
+}
+.Menu .nav-text {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding: 10px;
+  list-style: none;
+  height: 60px;
+}
+.Menu .nav-menu-items {
+  width: 100%;
 }/*# sourceMappingURL=main.css.map */
