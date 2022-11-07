@@ -8,14 +8,10 @@ const Home = ({data}) => {
 
   return(
     <Container fluid>
-      
-      <TopHeader />
-      <h1> - HOME - </h1>
       <HomepageHeader productInfo={data[3].data}/>
       <p>&nbsp;</p><p>&nbsp;</p>
       <ProductlistFilter productData={data} />
       <Footer />
-
     </Container>
   )
 

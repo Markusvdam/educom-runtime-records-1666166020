@@ -8,8 +8,6 @@ const Productpage = ({data}) => {
 
   return(
     <Container fluid>
-      <TopHeader />
-      <p>&nbsp;</p><p>&nbsp;</p>
       <ProductpageItem productInfo={data[3].data} />
       <p>&nbsp;</p><p>&nbsp;</p>
       <p>&nbsp;</p><p>&nbsp;</p>

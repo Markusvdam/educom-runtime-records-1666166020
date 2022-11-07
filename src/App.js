@@ -1,14 +1,14 @@
-import "./resources/styles/main.css"
 import { useDatabase } from "./hooks"
 
 //MENU STUFF
 import { BrowserRouter, Routes, Route, Outlet, createBrowserRouter, RouterProvider } from "react-router-dom"
-import Menu from "./components/organisms/Menu"
+import MenuHeader from "./components/organisms/MenuHeader"
 import { MenuData } from "./config/MenuData"
 
 import Home from "./components/pages/Home"
 import Productpage from "./components/pages/Productpage"
 import Cart from "./components/pages/Cart"
+import "./resources/styles/main.css"
 
 const App = () => {
 
@@ -19,11 +19,12 @@ const App = () => {
 
   const AppLayout = () => (
     <>
-      <Menu menuData={MenuData}/>
+      <MenuHeader menuData={MenuData}/>
       <Outlet />
     </>
   )
 
+  ///Menudata can be defined in /config/MenuData.js
   const router = createBrowserRouter([
     {
       element: <AppLayout />,

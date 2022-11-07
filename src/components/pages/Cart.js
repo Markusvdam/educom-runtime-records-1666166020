@@ -10,7 +10,7 @@ const Cart = ({data, cartData}) => {
 
   return(
     <Container fluid>
-      <TopHeader />
+
       <h2 className='h2'>Shopping cart</h2>
 
       {

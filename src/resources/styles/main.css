@@ -681,8 +681,6 @@ select {
 }
 @media (min-width: 1080px) {
   .HalfDisc {
-    background-image: url("../../resources/images/half-disc.png");
-    background-repeat: no-repeat;
     display: block;
     max-width: 121px;
     max-height: 347px;
@@ -830,6 +828,92 @@ select {
 }
 
 /*! Organisms */
+.MenuHeader {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 35px;
+  margin-right: 35px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  z-index: 1;
+  font-family: "main-text-bold", sans-serif;
+  font-size: var(--font-size-5);
+}
+.MenuHeader .right {
+  display: flex;
+  gap: 20px;
+}
+.MenuHeader .right .navbar {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.MenuHeader .right .menu-bars {
+  background: none;
+  justify-content: flex-end;
+}
+.MenuHeader .right .nav-menu {
+  width: 315px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  right: -100%;
+  transition: 750ms;
+  background-color: var(--bg-white);
+}
+.MenuHeader .right .nav-menu-active {
+  width: 400px;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  transition: 550ms;
+  background-color: var(--bg-white);
+}
+.MenuHeader .right .navbar-toggle {
+  margin-right: 35px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.MenuHeader .right .nav-text {
+  margin-left: 45px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  list-style: none;
+  height: 60px;
+  text-decoration: none;
+  color: var(--fg-base);
+}
+.MenuHeader .right .nav-text a:link {
+  text-decoration: none;
+  color: var(--fg-base);
+}
+.MenuHeader .right .nav-text a:visited {
+  text-decoration: none;
+  color: var(--fg-base);
+}
+.MenuHeader .right .nav-text a:hover {
+  color: var(--fg-base);
+  margin-left: -62px;
+}
+.MenuHeader .right .nav-text a:active {
+  text-decoration: none;
+  color: var(--fg-base);
+}
+.MenuHeader .right .nav-text a:hover::before {
+  content: "➜";
+  margin-right: 20px;
+}
+.MenuHeader .right .nav-menu-items {
+  width: 100%;
+}
+
 .HomepageHeader {
   display: flex;
   flex-wrap: wrap;
@@ -1075,50 +1159,88 @@ select {
   transform: scale(1.5);
 }
 
-.Menu .navbar {
-  height: 80px;
+.MenuHeader {
+  position: relative;
   display: flex;
-  justify-content: start;
+  justify-content: space-between;
+  margin-left: 35px;
+  margin-right: 35px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  z-index: 1;
+  font-family: "main-text-bold", sans-serif;
+  font-size: var(--font-size-5);
+}
+.MenuHeader .right {
+  display: flex;
+  gap: 20px;
+}
+.MenuHeader .right .navbar {
+  display: flex;
+  justify-content: flex-end;
   align-items: center;
 }
-.Menu .menu-bars {
-  padding: 10px;
+.MenuHeader .right .menu-bars {
   background: none;
+  justify-content: flex-end;
 }
-.Menu .nav-menu {
-  width: 100%;
+.MenuHeader .right .nav-menu {
+  width: 315px;
   height: 100%;
   display: flex;
   justify-content: center;
   position: fixed;
-  top: -100%;
-  left: 0;
-  transition: 1000ms;
-  background-color: white;
+  top: 0;
+  right: -100%;
+  transition: 750ms;
+  background-color: var(--bg-white);
 }
-.Menu .nav-menu-active {
-  width: 100%;
+.MenuHeader .right .nav-menu-active {
+  width: 400px;
   height: 100%;
   position: fixed;
   top: 0;
-  transition: 1000ms;
-  background-color: white;
+  right: 0;
+  transition: 550ms;
+  background-color: var(--bg-white);
 }
-.Menu .navbar-toggle {
-  width: 500px;
+.MenuHeader .right .navbar-toggle {
+  margin-right: 35px;
+  margin-top: 20px;
   display: flex;
-  justify-content: start;
+  justify-content: flex-end;
   align-items: center;
-  height: 80px;
 }
-.Menu .nav-text {
+.MenuHeader .right .nav-text {
+  margin-left: 45px;
   display: flex;
-  justify-content: start;
+  justify-content: left;
   align-items: center;
-  padding: 10px;
   list-style: none;
   height: 60px;
+  text-decoration: none;
+  color: var(--fg-base);
 }
-.Menu .nav-menu-items {
+.MenuHeader .right .nav-text a:link {
+  text-decoration: none;
+  color: var(--fg-base);
+}
+.MenuHeader .right .nav-text a:visited {
+  text-decoration: none;
+  color: var(--fg-base);
+}
+.MenuHeader .right .nav-text a:hover {
+  color: var(--fg-base);
+  margin-left: -62px;
+}
+.MenuHeader .right .nav-text a:active {
+  text-decoration: none;
+  color: var(--fg-base);
+}
+.MenuHeader .right .nav-text a:hover::before {
+  content: "➜";
+  margin-right: 20px;
+}
+.MenuHeader .right .nav-menu-items {
   width: 100%;
 }/*# sourceMappingURL=main.css.map */

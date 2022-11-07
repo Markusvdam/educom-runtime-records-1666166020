@@ -1,17 +1,17 @@
 import React from 'react'
-import Menu from './Menu'
+import MenuHeader from './MenuHeader'
 
-const MenuMeta = {
-    title: "organisms/Menu",
-    component: Menu,
+const MenuHeaderMeta = {
+    title: "organisms/MenuHeader",
+    component: MenuHeader,
     argTypes: {
         testID: { table: { disable: true } },
         menuData: { name: "Menu data:" }
     }
 }
 
-const testID = "Menu-" + Math.floor(Math.random() * 90000) + 10000
-const Template = (args) => <Menu {...args} />
+const testID = "MenuHeader-" + Math.floor(Math.random() * 90000) + 10000
+const Template = (args) => <MenuHeader {...args} />
 
 const menuData = [
     {
@@ -41,10 +41,10 @@ const menuData = [
   ]
 
 
-export const DefaultMenu = Template.bind({})
-DefaultMenu.args = {
+export const DefaultMenuHeader = Template.bind({})
+DefaultMenuHeader.args = {
     testID: testID,
     menuData: menuData
 }
 
-export default MenuMeta
+export default MenuHeaderMeta
