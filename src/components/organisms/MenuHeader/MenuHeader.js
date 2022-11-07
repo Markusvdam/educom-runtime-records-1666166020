@@ -40,7 +40,7 @@ const MenuHeader = ({ testID, menuData }) => {
                                     <li key={i} className="nav-text" onClick={showSidebar}>
                                         <Link to={item.path}>{item.title}</Link>
                                     </li>
-                                    <hr></hr>
+                                    <hr />
                                     </>
                                 )
                             })}

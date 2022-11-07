@@ -49,7 +49,9 @@ const ProductlistFilter = ({ testID, productData, onChangeSearch}) => {
         <div data-testid={ testID } className={ utils }>
             <SearchHomepageFilter onChangeSearch={onChangeSearch}/>
             <Productlist productData={sliced} />
+            <div className='PaginationContainer'>
             <PaginationShow currentPage={page} pageCount={pageCount} onChangePage={handleChangePage} />
+            </div>
         </div>
     )
 }
