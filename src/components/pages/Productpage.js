@@ -13,19 +13,18 @@ const Productpage = ({data}) => {
   let [productInfo, setProductInfo] = useState(data.find(object => object.id === ID));
   
   useEffect(() => {
-    setID (searchParams.get("product"))
+    setID(searchParams.get("product"))
     setProductInfo(data.find(object => object.id === ID))
-  }, [searchParams])
+    window.scrollTo({top: 0, behavior: 'smooth'})
+  }, [searchParams, ID])
 
   return(
     <Container fluid>
-      {productInfo === undefined ?
-      <p>Wrong/empty data</p>
+      {productInfo !== undefined ?
+        <ProductpageItem productInfo={productInfo.data}/>
       :
-      <ProductpageItem productInfo={productInfo.data}/>
+        <h1> -- Wrong/empty data -- </h1>
       }
-      <p>&nbsp;</p><p>&nbsp;</p>
-      <p>&nbsp;</p><p>&nbsp;</p>
       <Productlist productData={data.slice(0, 4)} />
       <Footer />
 
