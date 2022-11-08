@@ -20,7 +20,7 @@ const Productpage = ({data}) => {
 
   return(
     <>
-      {productInfo !== undefined ?
+      {productInfo ?
         <ProductpageItem productInfo={productInfo.data}/>
       :
         <h1> -- Wrong/empty data -- </h1>

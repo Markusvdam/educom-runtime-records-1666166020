@@ -15,10 +15,12 @@ const HomepageHeader = ({ testID, productInfo}) => {
     return(
         <div data-testid={ testID } className={ utils }>
             <div className="HomepageHeaderContent">
-                <h3 className="fg-base-light-50">{productInfo.artist}</h3>
-                <h1>{productInfo.title}</h1>
-                <p className="text">{productInfo.description}</p>
-                <Label exceptionType='genre' text={productInfo.genre}/>
+                <div className="HomepageHeaderTop">
+                    <h3 className="fg-base-light-50">{productInfo.artist}</h3>
+                    <h1>{productInfo.title}</h1>
+                    <p className="text">{productInfo.description}</p>
+                    <Label exceptionType='genre' text={productInfo.genre}/>
+                </div>
                 <div className="HomepageHeaderBottom">
                     <div className="left-column"><ButtonAdd text={textButtonAdd}/></div>
                     <div className="right-column"><Button text={textButtonRead}/></div>

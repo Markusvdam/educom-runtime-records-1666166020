@@ -926,7 +926,7 @@ a {
 
 .HomepageHeader {
   display: flex;
-  gap: 1rem;
+  gap: 2rem;
   flex-wrap: wrap;
   background-image: url("../../resources/images/homepageimage.png");
   background-repeat: no-repeat;
@@ -944,6 +944,8 @@ a {
   }
 }
 .HomepageHeader .HomepageHeaderContent {
+  display: flex;
+  flex-direction: column;
   height: 369px;
   color: white;
   text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.9);
@@ -958,20 +960,23 @@ a {
 }
 .HomepageHeader .text {
   font-family: "main-text-regular", sans-serif;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 .HomepageHeader .HomepageHeaderBottom {
+  height: 100%;
   display: flex;
-  flex-wrap: wrap;
+  align-items: flex-end;
 }
-.HomepageHeader .right-column {
+.HomepageHeader .HomepageHeaderBottom .left-column {
+  margin-left: -50px;
+  margin-bottom: 30px;
+}
+.HomepageHeader .HomepageHeaderBottom .right-column {
   margin-left: auto;
   margin-right: 0;
-}
-@media screen and (min-width: 600px) {
-  .HomepageHeader .right-column {
-    margin-left: auto;
-    margin-right: 0;
-  }
 }
 .HomepageHeader .btx-animate .btx-text {
   color: var(--fg-white);
@@ -1009,6 +1014,7 @@ a {
   background-color: var(--fg-white);
   position: relative;
   max-width: 350px;
+  transition: transform 0.17s;
 }
 .ProductCard .ProductCardImage {
   border-radius: 0.8rem;
@@ -1052,6 +1058,10 @@ a {
 }
 .ProductCard .ProductCardContent .spacer {
   height: 40px;
+}
+
+.ProductCard:hover {
+  transform: scale(1.06);
 }
 
 .Productlist {

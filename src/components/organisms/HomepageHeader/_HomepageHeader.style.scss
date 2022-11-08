@@ -1,6 +1,6 @@
 .HomepageHeader {
   display: flex;
-  gap: 1rem;
+  gap: 2rem;
   flex-wrap: wrap;
   background-image: url('../../resources/images/homepageimage.png');
   background-repeat: no-repeat;
@@ -18,6 +18,8 @@
   }
 
   .HomepageHeaderContent{
+    display: flex;
+    flex-direction: column;
     @media (min-width: 510px) {
       width: 500px;
     }
@@ -32,23 +34,23 @@
 
   .text{
     font-family: "main-text-regular", sans-serif;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
   }
 
   .HomepageHeaderBottom{
-    @media (min-width: 1080px) {
-      //padding-top: 155px;
-    }
+    height: 100%;
     display: flex;
-    flex-wrap: wrap;
-  }
-  
-  .right-column{
-    margin-left: auto;
-    margin-right: 0;
-  }
-  
-  @media screen and (min-width: 600px){
-  
+    align-items: flex-end;
+
+    .left-column{
+      //margin-right: auto;
+      margin-left: -50px;
+      margin-bottom: 30px;
+    }
+
     .right-column{
       margin-left: auto;
       margin-right: 0;
