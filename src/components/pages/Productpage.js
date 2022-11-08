@@ -19,7 +19,7 @@ const Productpage = ({data}) => {
   }, [searchParams, ID])
 
   return(
-    <Container fluid>
+    <>
       {productInfo !== undefined ?
         <ProductpageItem productInfo={productInfo.data}/>
       :
@@ -28,7 +28,7 @@ const Productpage = ({data}) => {
       <Productlist productData={data.slice(0, 4)} />
       <Footer />
 
-    </Container>
+    </>
   )
 }
 

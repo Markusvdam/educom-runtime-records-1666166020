@@ -9,10 +9,8 @@ const Cart = ({data, cartData}) => {
   let total = 0;
 
   return(
-    <Container fluid>
-
+    <>
       <center><h2 className='h2'>Shopping cart</h2></center>
-
       {
         cartData.map((productID, i) => {    
           const product = data.find(object => object.id === productID) 
@@ -30,7 +28,7 @@ const Cart = ({data, cartData}) => {
       <div><h2 className='h2'>Total: {(Math.round(total * 100) / 100).toFixed(2)}</h2></div>
       </center>
       <Footer />
-    </Container>
+    </>
   )
 }
 export default Cart;
