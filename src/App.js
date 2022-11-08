@@ -1,7 +1,7 @@
 import { useDatabase } from "./hooks"
 
 //MENU STUFF
-import { BrowserRouter, Routes, Route, Outlet, createBrowserRouter, RouterProvider } from "react-router-dom"
+import { Outlet, createBrowserRouter, RouterProvider } from "react-router-dom"
 import MenuHeader from "./components/organisms/MenuHeader"
 import { MenuData } from "./config/MenuData"
 

@@ -70,3 +70,13 @@ select {
     scroll-behavior: auto !important;
   }
 }
+
+body, html{
+  margin:0;
+  padding: 0;
+}
+
+a{
+  text-decoration: none !important;
+  //
+}

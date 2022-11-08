@@ -24,15 +24,15 @@ const MenuHeader = ({ testID, menuData }) => {
             <Cart />
                 <>
                     <div className="navbar" onClick={showSidebar}>
-                        <Link to="#" className='menu-bars'><Hamburgermenu /></Link>
+                        <div to="../#" className='menu-bars'><Hamburgermenu /></div>
                     </div>
 
                     <nav className={sidebar ? 'nav-menu-active' : 'nav-menu'}>
                         <ul className="nav-menu-items" onClick={showSidebar}>
                             <li className="navbar-toggle" >    
-                                <Link to="#" className="menu-bars">
+                                <div to="../#" className="menu-bars">
                                 <Closemenu />
-                                </Link>
+                                </div>
                             </li>
                             {menuData.map((item, i) => {
                                 return(

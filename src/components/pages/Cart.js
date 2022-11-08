@@ -11,7 +11,7 @@ const Cart = ({data, cartData}) => {
   return(
     <Container fluid>
 
-      <h2 className='h2'>Shopping cart</h2>
+      <center><h2 className='h2'>Shopping cart</h2></center>
 
       {
         cartData.map((productID, i) => {    

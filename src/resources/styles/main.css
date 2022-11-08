@@ -73,6 +73,15 @@ select {
     scroll-behavior: auto !important;
   }
 }
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none !important;
+}
+
 /** FONTS **/
 /*! main-text-regular */
 @font-face {
@@ -832,6 +841,7 @@ select {
   position: relative;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin-left: 35px;
   margin-right: 35px;
   margin-top: 15px;
@@ -916,6 +926,7 @@ select {
 
 .HomepageHeader {
   display: flex;
+  gap: 1rem;
   flex-wrap: wrap;
   background-image: url("../../resources/images/homepageimage.png");
   background-repeat: no-repeat;
@@ -1180,6 +1191,7 @@ select {
   position: relative;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin-left: 35px;
   margin-right: 35px;
   margin-top: 15px;
