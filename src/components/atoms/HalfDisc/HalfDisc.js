@@ -1,4 +1,3 @@
-import { useState, useEffect } from 'react'
 import PropTypes from 'prop-types'
 import disc from './../../../resources/images/half-disc.png'
 
@@ -8,7 +7,7 @@ const HalfDisc = ({ testID}) => {
 
     return(
         <div data-testid={ testID } className={ utils }>
-            <img src={disc} />
+            <img src={disc} alt="Half disc"/>
         </div>
     )
 

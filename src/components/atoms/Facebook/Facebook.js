@@ -1,4 +1,3 @@
-import { useState, useEffect } from 'react'
 import PropTypes from 'prop-types'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSquareFacebook } from '@fortawesome/free-brands-svg-icons'

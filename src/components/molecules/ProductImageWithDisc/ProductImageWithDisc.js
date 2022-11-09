@@ -1,4 +1,3 @@
-import { useState, useEffect } from 'react'
 import PropTypes from 'prop-types'
 import ProductImage from './../../atoms/ProductImage';
 import HalfDisc from './../../atoms/HalfDisc';

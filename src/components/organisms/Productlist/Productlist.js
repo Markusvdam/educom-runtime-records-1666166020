@@ -1,4 +1,3 @@
-import { useState, useEffect } from 'react'
 import PropTypes, { array } from 'prop-types'
 import ProductCard from './../ProductCard'
 import { Link } from "react-router-dom";

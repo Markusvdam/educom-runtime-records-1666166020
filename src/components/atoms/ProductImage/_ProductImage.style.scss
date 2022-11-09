@@ -1,19 +1,4 @@
 .ProductImage {
-  visibility: hidden;
-
-  @media (min-width: 850px) {
-    visibility: visible;
-    width: 60%;
-  }
-
-  @media (min-width: 1080px) {
-    visibility:visible;
-    width: 368px;
-    height: 368px;
-  
-    img{
-      width: 368px;
-      height: 368px; 
-    }
-  }
+  width: 368px;
+  height: 368px;
 }

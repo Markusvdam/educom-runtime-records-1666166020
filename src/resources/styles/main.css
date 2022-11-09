@@ -665,38 +665,12 @@ a {
 }
 
 .ProductImage {
-  visibility: hidden;
-}
-@media (min-width: 850px) {
-  .ProductImage {
-    visibility: visible;
-    width: 60%;
-  }
-}
-@media (min-width: 1080px) {
-  .ProductImage {
-    visibility: visible;
-    width: 368px;
-    height: 368px;
-  }
-  .ProductImage img {
-    width: 368px;
-    height: 368px;
-  }
+  width: 368px;
+  height: 368px;
 }
 
 .HalfDisc {
-  visibility: hidden;
-}
-@media (min-width: 1080px) {
-  .HalfDisc {
-    display: block;
-    max-width: 121px;
-    max-height: 347px;
-    width: 121px;
-    height: 347px;
-    visibility: visible;
-  }
+  height: 100%;
 }
 
 .PaginationShow {
@@ -762,12 +736,6 @@ a {
 
 .ProductImageWithDisc {
   display: flex;
-  height: 200px;
-}
-@media (min-width: 1080px) {
-  .ProductImageWithDisc {
-    height: 368px;
-  }
 }
 .ProductImageWithDisc .HalfDisc {
   position: relative;
@@ -926,37 +894,30 @@ a {
 
 .HomepageHeader {
   display: flex;
-  gap: 2rem;
+  gap: 1.5rem;
   flex-wrap: wrap;
   background-image: url("../../resources/images/homepageimage.png");
   background-repeat: no-repeat;
   background-position: center;
-  max-width: 100%;
   width: auto;
   align-items: center;
   justify-content: center;
+  padding-left: 100px;
   font-family: "main-text-bold", sans-serif;
-  height: 300px;
-}
-@media (min-width: 1080px) {
-  .HomepageHeader {
-    height: 670px;
-  }
+  height: 650px;
 }
 .HomepageHeader .HomepageHeaderContent {
   display: flex;
   flex-direction: column;
+  width: 500px;
   height: 369px;
   color: white;
   text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.9);
 }
-@media (min-width: 510px) {
+@media (min-width: 1080px) {
   .HomepageHeader .HomepageHeaderContent {
-    width: 500px;
+    padding-left: 100px;
   }
-}
-.HomepageHeader .ProductImageWithDisc {
-  color: white;
 }
 .HomepageHeader .text {
   font-family: "main-text-regular", sans-serif;

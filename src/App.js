@@ -19,7 +19,7 @@ const App = () => {
 
   const AppLayout = () => (
     <>
-      <MenuHeader menuData={MenuData}/>
+      <MenuHeader menuData={MenuData} cartData={cartData}/>
       <Outlet />
     </>
   )

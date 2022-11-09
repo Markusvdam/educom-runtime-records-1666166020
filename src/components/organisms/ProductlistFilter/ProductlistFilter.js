@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import PropTypes, { array } from 'prop-types'
+import PropTypes from 'prop-types'
 import EnvironmentSetting from './../../../../src/config/EnvironmentSetting.js'
 import SearchHomepageFilter from './../../molecules/SearchHomepageFilter'
 import Productlist from './../Productlist'

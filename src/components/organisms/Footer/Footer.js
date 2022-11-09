@@ -1,4 +1,3 @@
-import { useState, useEffect } from 'react'
 import PropTypes from 'prop-types'
 import recordstoreday from './../../../resources/images/record-store-day.png';
 import Logo from './../../atoms/Logo'

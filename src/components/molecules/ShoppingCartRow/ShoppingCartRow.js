@@ -1,6 +1,4 @@
-import { useState, useEffect } from 'react'
 import PropTypes from 'prop-types'
-import ProductImage from './../../atoms/ProductImage';
 import Label from './../../atoms/Label';
 import Delete from './../../atoms/Delete';
 

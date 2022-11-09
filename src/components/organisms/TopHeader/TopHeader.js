@@ -1,4 +1,3 @@
-import { useState, useEffect } from 'react'
 import PropTypes from 'prop-types'
 import Hamburgermenu from './../../atoms/Hamburgermenu'
 import Logo from './../../atoms/Logo'

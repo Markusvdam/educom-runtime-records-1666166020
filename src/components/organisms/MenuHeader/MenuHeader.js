@@ -6,11 +6,12 @@ import Closemenu from "./../../atoms/Closemenu";
 import Logo from './../../atoms/Logo'
 import Cart from '../../atoms/Cart';
 
-const MenuHeader = ({ testID, menuData }) => {
+const MenuHeader = ({ testID, menuData, cartData }) => {
 
     const utils = ["MenuHeader"].join(" ")
     const [sidebar, setSidebar] = useState(false)
     const showSidebar = () => setSidebar(!sidebar)
+
 
     return (
         <div data-testid={ testID } className={ utils }>
@@ -21,7 +22,7 @@ const MenuHeader = ({ testID, menuData }) => {
 
             {/* ----------------RIGHT---------------- */}
             <div className="right">
-            <Cart />
+            <Cart count={2}/>
                 <>
                     <div className="navbar" onClick={showSidebar}>
                         <div to="../#" className='menu-bars'><Hamburgermenu /></div>
@@ -29,19 +30,19 @@ const MenuHeader = ({ testID, menuData }) => {
 
                     <nav className={sidebar ? 'nav-menu-active' : 'nav-menu'}>
                         <ul className="nav-menu-items" onClick={showSidebar}>
-                            <li className="navbar-toggle" >    
+                            <li key={"toggle"} className="navbar-toggle" >    
                                 <div to="../#" className="menu-bars">
                                 <Closemenu />
                                 </div>
                             </li>
                             {menuData.map((item, i) => {
                                 return(
-                                    <>
+                                    <div key={"item-"+i}>
                                     <li key={i} className="nav-text" onClick={showSidebar}>
                                         <Link to={item.path}>{item.title}</Link>
                                     </li>
-                                    <hr />
-                                    </>
+                                    <hr/>
+                                    </div>
                                 )
                             })}
                         </ul>

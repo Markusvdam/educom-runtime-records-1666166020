@@ -1,4 +1,3 @@
-import { useState, useEffect } from 'react'
 import PropTypes from 'prop-types'
 
 const ProductImage = ({ testID, imageURL}) => {
@@ -7,7 +6,7 @@ const ProductImage = ({ testID, imageURL}) => {
 
     return(
         <div data-testid={ testID } className={ utils }>
-            <img src={ imageURL } />
+            <img src={ imageURL } alt="Product Tile"/>
         </div>
     )
 }

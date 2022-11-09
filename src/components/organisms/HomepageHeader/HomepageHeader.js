@@ -1,4 +1,3 @@
-import { useState, useEffect } from 'react'
 import PropTypes from 'prop-types'
 import ProductImageWithDisc from './../../molecules/ProductImageWithDisc'
 import Label from './../../atoms/Label'

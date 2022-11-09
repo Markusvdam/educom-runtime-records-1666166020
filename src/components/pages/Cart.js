@@ -1,8 +1,5 @@
-import Container from 'react-bootstrap/Container'
-import TopHeader from './../organisms/TopHeader'
 import Footer from './../organisms/Footer'
 import ShoppingCartRow from './../molecules/ShoppingCartRow'
-import Label from '../atoms/Label'
 
 const Cart = ({data, cartData}) => {
 
