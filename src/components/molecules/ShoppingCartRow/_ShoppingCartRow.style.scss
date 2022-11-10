@@ -14,35 +14,42 @@
 
     .Row {
       display: flex;
+      justify-content: space-between;
       height: 175px;
       gap: 30px;
-  
-      img{
-        max-width: 170px;
-        max-height: 170px; 
-        -webkit-box-shadow: 10px 7px 31px -12px rgba(17, 17, 17, 0.75);
-        -moz-box-shadow: 10px 7px 31px -12px rgba(17, 17, 17, 0.75);
-        box-shadow: 10px 7px 31px -12px rgba(17, 17, 17, 0.75);
-        border-radius: 15px;
-      }
 
-      .info{
-          padding-top: 40px;
-      }
+      .startrow{
+        gap: 35px;
+        display: flex;
+        img{
+          max-width: 170px;
+          max-height: 170px; 
+          -webkit-box-shadow: 10px 7px 31px -12px rgba(17, 17, 17, 0.75);
+          -moz-box-shadow: 10px 7px 31px -12px rgba(17, 17, 17, 0.75);
+          box-shadow: 10px 7px 31px -12px rgba(17, 17, 17, 0.75);
+          border-radius: 15px;
+        }
   
-      .Label{
-        position: relative;
-        top: 50%;
-        -ms-transform: translateY(-50%);
-        transform: translateY(-50%);
+        .info{
+            padding-top: 40px;
+        }
       }
-  
-      .Delete{
+    
+      .endrow{
+        gap: 5px;
         position: relative;
-        top: 50%;
-        -ms-transform: translateY(-50%);
-        transform: translateY(-50%); 
+        display: flex;
+        align-items: center;
+        left: 53px;
+        .Label{
+          position: relative;
+        }
+    
+        .Delete{
+          position: relative;
+        }
       }
+      
     }
   
     .hrCart{

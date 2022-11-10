@@ -2,7 +2,7 @@ import PropTypes from 'prop-types'
 import Label from './../../atoms/Label'
 import Delete from './../../atoms/Delete'
 import { useContext } from 'react'
-import { CartContext } from '../../../context/CartContext'
+import { CartContext } from '../../../hooks/CartContext'
 
 const ShoppingCartRow = ({ testID, productInfo}) => {
 
@@ -18,14 +18,21 @@ const ShoppingCartRow = ({ testID, productInfo}) => {
             <div data-testid={ testID } className="RowContainer">
                 <div className="Row">
                     
-                    <div><img src={productInfo.imageURL}/></div>
-                    
-                    <div className="info">
-                        <h3 className="h3">{productInfo.title}</h3>
-                        <h4 className="h5 fg-base-light-50">{productInfo.artist}</h4>
+                    <div className='startrow'>
+                        <div><img src={productInfo.imageURL}/></div>
+                        
+                        <div className="info">
+                            <h3 className="h3">{productInfo.title}</h3>
+                            <h4 className="h5 fg-base-light-50">{productInfo.artist}</h4>
+                        </div>
+
                     </div>
-                    <Label className="label" exceptionType='price' text={productInfo.price}/>
-                    <div onClick={removeItem}><Delete /></div>
+                    <div className='endrow'>
+
+                            <div><Label className="label" exceptionType='price' text={productInfo.price}/></div>
+                            <div onClick={removeItem}><Delete /></div>
+
+                    </div>
                 </div>
                 <div>
                     <hr className="hrCart"></hr>
