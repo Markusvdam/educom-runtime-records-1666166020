@@ -6,7 +6,7 @@ import Closemenu from "./../../atoms/Closemenu";
 import Logo from './../../atoms/Logo'
 import Cart from '../../atoms/Cart';
 import { useContext } from 'react';
-import { CartContext } from '../../../context/CartContext'
+import { CartContext } from '../../../hooks/CartContext'
 
 const MenuHeader = ({ testID, menuData }) => {
 

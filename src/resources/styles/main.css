@@ -776,27 +776,35 @@ a {
 }
 .ShoppingCartRow .RowContainer .Row {
   display: flex;
+  justify-content: space-between;
   height: 175px;
   gap: 30px;
 }
-.ShoppingCartRow .RowContainer .Row img {
+.ShoppingCartRow .RowContainer .Row .startrow {
+  gap: 35px;
+  display: flex;
+}
+.ShoppingCartRow .RowContainer .Row .startrow img {
   max-width: 170px;
   max-height: 170px;
   box-shadow: 10px 7px 31px -12px rgba(17, 17, 17, 0.75);
   border-radius: 15px;
 }
-.ShoppingCartRow .RowContainer .Row .info {
+.ShoppingCartRow .RowContainer .Row .startrow .info {
   padding-top: 40px;
 }
-.ShoppingCartRow .RowContainer .Row .Label {
+.ShoppingCartRow .RowContainer .Row .endrow {
+  gap: 5px;
   position: relative;
-  top: 50%;
-  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  left: 53px;
 }
-.ShoppingCartRow .RowContainer .Row .Delete {
+.ShoppingCartRow .RowContainer .Row .endrow .Label {
   position: relative;
-  top: 50%;
-  transform: translateY(-50%);
+}
+.ShoppingCartRow .RowContainer .Row .endrow .Delete {
+  position: relative;
 }
 .ShoppingCartRow .RowContainer .hrCart {
   height: 2px;

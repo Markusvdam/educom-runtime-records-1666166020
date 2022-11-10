@@ -1,12 +1,15 @@
 import PropTypes from 'prop-types'
 import Label from './../../atoms/Label'
 import ButtonAdd from './../../atoms/ButtonAdd'
+import { CartContext } from '../../../hooks/CartContext'
+import { useContext } from 'react'
 
 /// TODO: Define props
 const ProductpageItem = ({ testID, productInfo}) => {
 
     const utils = ["ProductpageItem"].join(" ")
     const textButtonAdd = "Add"
+    const { addItem } = useContext(CartContext)
 
     return(
         <div data-testid={ testID } className={ utils }>
@@ -27,7 +30,7 @@ const ProductpageItem = ({ testID, productInfo}) => {
 
                             </div>
                             <div className="ProductCardAdd">
-                                <div className="b"><ButtonAdd text={textButtonAdd}/></div>
+                                <div className="b" onClick={() =>addItem(productInfo.id)}><ButtonAdd text={textButtonAdd}/></div>
                             </div>
                         </div>
                     </div>

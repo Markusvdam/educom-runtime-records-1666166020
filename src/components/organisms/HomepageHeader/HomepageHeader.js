@@ -3,13 +3,15 @@ import ProductImageWithDisc from './../../molecules/ProductImageWithDisc'
 import Label from './../../atoms/Label'
 import Button from './../../atoms/Button'
 import ButtonAdd from './../../atoms/ButtonAdd'
+import { CartContext } from '../../../hooks/CartContext'
+import { useContext } from 'react'
 
-/// TODO: Define props
 const HomepageHeader = ({ testID, productInfo}) => {
 
     const utils = ["HomepageHeader"].join(" ")
     const textButtonRead = "Read more"
     const textButtonAdd = "Add"
+    const { addItem } = useContext(CartContext)
 
     return(
         <div data-testid={ testID } className={ utils }>
@@ -21,7 +23,7 @@ const HomepageHeader = ({ testID, productInfo}) => {
                     <Label exceptionType='genre' text={productInfo.genre}/>
                 </div>
                 <div className="HomepageHeaderBottom">
-                    <div className="left-column"><ButtonAdd text={textButtonAdd}/></div>
+                    <div className="left-column" onClick={() =>addItem(productInfo.id)}><ButtonAdd text={textButtonAdd}/></div>
                     <div className="right-column"><Button text={textButtonRead}/></div>
                 </div>
             </div>
