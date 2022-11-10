@@ -22,7 +22,7 @@ const MenuHeader = ({ testID, menuData }) => {
 
 
             <div className="right">
-            <Link to="/cart"><Cart count={11}/></Link>
+            <Link to="/cart"><Cart count={cartData.length}/></Link>
                 <>
                     <div className="navbar" onClick={showSidebar}>
                         <div to="../#" className='menu-bars'><Hamburgermenu /></div>

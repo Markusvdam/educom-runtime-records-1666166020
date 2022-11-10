@@ -26,7 +26,6 @@ const Productpage = ({data}) => {
         <h1> -- Wrong/empty data -- </h1>
       }
       <Productlist productData={data.slice(0, 4)} />
-      <Footer />
 
     </>
   )

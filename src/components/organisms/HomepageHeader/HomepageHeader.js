@@ -5,6 +5,7 @@ import Button from './../../atoms/Button'
 import ButtonAdd from './../../atoms/ButtonAdd'
 import { CartContext } from '../../../hooks/CartContext'
 import { useContext } from 'react'
+import { Link } from "react-router-dom";
 
 const HomepageHeader = ({ testID, productInfo}) => {
 
@@ -24,11 +25,11 @@ const HomepageHeader = ({ testID, productInfo}) => {
                 </div>
                 <div className="HomepageHeaderBottom">
                     <div className="left-column" onClick={() =>addItem(productInfo.id)}><ButtonAdd text={textButtonAdd}/></div>
-                    <div className="right-column"><Button text={textButtonRead}/></div>
+                    <div className="right-column"><Link to={"../productpage/?product="+productInfo.id}><Button text={textButtonRead}/></Link></div>
                 </div>
             </div>
             <div>
-                <ProductImageWithDisc imageURL={productInfo.imageURL}/>
+                <Link to={"../productpage/?product="+productInfo.id}><ProductImageWithDisc imageURL={productInfo.imageURL}/></Link>
             </div>
         </div>
     )

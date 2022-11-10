@@ -29,7 +29,6 @@ const Cart = ({data}) => {
       <div><h2 className='h2'>Total: {CurrencyFormatter(total)}</h2></div>
       </center>
       <p>&nbsp;</p><p>&nbsp;</p>
-      <Footer />
     </div>
   )
 }

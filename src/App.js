@@ -8,6 +8,7 @@ import Productpage from "./components/pages/Productpage"
 import Cart from "./components/pages/Cart"
 import { CartContext } from "./hooks/CartContext"
 import { useState } from "react"
+import Footer from "./components/organisms/Footer"
 
 const App = () => {
 
@@ -16,10 +17,9 @@ const App = () => {
   const addItem = (id) => {
     if (cartData.find(object => object === id) == null) {
         setCartData(cartData => [...cartData, id])
-        alert("PRODUCT ADDED TO CART")
       }
     else{
-        alert("PRODUCT EXISTS ALREADY IN CART")
+        alert("PRODUCT ALREADY EXISTS IN CART")
     }
   }
 
@@ -27,6 +27,7 @@ const App = () => {
     <CartContext.Provider value={{cartData, setCartData, addItem}}>
       <MenuHeader menuData={MenuData}/>
       <Outlet />
+      <Footer />
     </CartContext.Provider>
   )
 

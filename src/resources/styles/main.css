@@ -842,7 +842,7 @@ a {
 .MenuHeader .right .menu-bars {
   background: none;
   justify-content: flex-end;
-  transform: scale(1.25);
+  transform: scale(1.2);
 }
 .MenuHeader .right .nav-menu {
   width: 315px;
@@ -955,8 +955,9 @@ a {
   align-items: flex-end;
 }
 .HomepageHeader .HomepageHeaderBottom .left-column {
-  margin-left: -50px;
-  margin-bottom: 30px;
+  transform: scale(1.3);
+  margin-left: -62px;
+  margin-bottom: 40px;
 }
 .HomepageHeader .HomepageHeaderBottom .right-column {
   margin-left: auto;
@@ -1082,6 +1083,8 @@ a {
 .ProductlistFilter .Productlist {
   padding-top: 75px;
   justify-content: center;
+  padding-right: 55px;
+  padding-left: 55px;
 }
 .ProductlistFilter .PaginationShow {
   justify-content: center;
@@ -1211,7 +1214,7 @@ a {
 .MenuHeader .right .menu-bars {
   background: none;
   justify-content: flex-end;
-  transform: scale(1.25);
+  transform: scale(1.2);
 }
 .MenuHeader .right .nav-menu {
   width: 315px;

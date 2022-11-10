@@ -16,7 +16,7 @@ const Template = (args) => <ProductImage {...args} />
 export const DefaultProductImage = Template.bind({})
 DefaultProductImage.args = {
     testID: testID,
-    imageURL: "https://sienaconstruction.com/wp-content/uploads/2017/05/test-image.jpg"
+    imageURL: "https://i1.sndcdn.com/artworks-000085484153-bl8j1y-t500x500.jpg"
 }
 
 export default ProductImageMeta
