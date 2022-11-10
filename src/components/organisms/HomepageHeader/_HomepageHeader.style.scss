@@ -11,6 +11,9 @@
   padding-left: 100px;
   font-family: "main-text-bold", sans-serif;
   height: 650px;
+  @media (max-width: 1111px) {
+    height:375px;
+  }
 
   .HomepageHeaderContent{
     display: flex;
@@ -25,8 +28,11 @@
   }
 
   .ProductImageWithDisc{
-    //TODO
+    @media (max-width: 1111px) {
+      visibility: hidden;
+    }
   }
+
 
   .text{
     font-family: "main-text-regular", sans-serif;

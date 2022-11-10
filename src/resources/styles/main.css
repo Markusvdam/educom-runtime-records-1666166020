@@ -821,8 +821,6 @@ a {
   align-items: center;
   margin-left: 35px;
   margin-right: 35px;
-  margin-top: 15px;
-  margin-bottom: 15px;
   z-index: 1;
   font-family: "main-text-bold", sans-serif;
   font-size: var(--font-size-5);
@@ -830,6 +828,11 @@ a {
 .MenuHeader .right {
   display: flex;
   gap: 20px;
+  margin-top: 10px;
+}
+.MenuHeader .right .Cart {
+  margin-top: 5px;
+  scale: 0.9;
 }
 .MenuHeader .right .navbar {
   display: flex;
@@ -839,6 +842,7 @@ a {
 .MenuHeader .right .menu-bars {
   background: none;
   justify-content: flex-end;
+  transform: scale(1.25);
 }
 .MenuHeader .right .nav-menu {
   width: 315px;
@@ -915,6 +919,11 @@ a {
   font-family: "main-text-bold", sans-serif;
   height: 650px;
 }
+@media (max-width: 1111px) {
+  .HomepageHeader {
+    height: 375px;
+  }
+}
 .HomepageHeader .HomepageHeaderContent {
   display: flex;
   flex-direction: column;
@@ -926,6 +935,11 @@ a {
 @media (min-width: 1080px) {
   .HomepageHeader .HomepageHeaderContent {
     padding-left: 100px;
+  }
+}
+@media (max-width: 1111px) {
+  .HomepageHeader .ProductImageWithDisc {
+    visibility: hidden;
   }
 }
 .HomepageHeader .text {
@@ -1176,8 +1190,6 @@ a {
   align-items: center;
   margin-left: 35px;
   margin-right: 35px;
-  margin-top: 15px;
-  margin-bottom: 15px;
   z-index: 1;
   font-family: "main-text-bold", sans-serif;
   font-size: var(--font-size-5);
@@ -1185,6 +1197,11 @@ a {
 .MenuHeader .right {
   display: flex;
   gap: 20px;
+  margin-top: 10px;
+}
+.MenuHeader .right .Cart {
+  margin-top: 5px;
+  scale: 0.9;
 }
 .MenuHeader .right .navbar {
   display: flex;
@@ -1194,6 +1211,7 @@ a {
 .MenuHeader .right .menu-bars {
   background: none;
   justify-content: flex-end;
+  transform: scale(1.25);
 }
 .MenuHeader .right .nav-menu {
   width: 315px;

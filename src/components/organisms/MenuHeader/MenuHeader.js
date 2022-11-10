@@ -18,13 +18,11 @@ const MenuHeader = ({ testID, menuData }) => {
     return (
         <div data-testid={ testID } className={ utils }>
             
-            {/* -------------------LEFT-------------- */}
-            <div className="left"><Logo /></div>
+            <div className="left"><Link to="/"><Logo /></Link></div>
 
 
-            {/* ----------------RIGHT---------------- */}
             <div className="right">
-            <Link to="/cart"><Cart count={cartData.length}/></Link>
+            <Link to="/cart"><Cart count={11}/></Link>
                 <>
                     <div className="navbar" onClick={showSidebar}>
                         <div to="../#" className='menu-bars'><Hamburgermenu /></div>
