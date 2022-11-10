@@ -4,10 +4,6 @@ export const MenuData = [
     path: "/"
   }, 
   {
-    title : "Productpage", 
-    path: "/productpage"
-  }, 
-  {
     title : "Cart", 
     path: "/cart"
   }, 

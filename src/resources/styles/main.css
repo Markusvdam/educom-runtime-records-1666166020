@@ -705,6 +705,7 @@ a {
   top: -30px;
   left: 36px;
   text-align: center;
+  font-size: 15px;
 }
 .Cart .counter p {
   position: relative;

@@ -10,7 +10,7 @@ const Home = ({data}) => {
     <>
       <HomepageHeader productInfo={data[3].data}/>
       <p>&nbsp;</p><p>&nbsp;</p>
-      <ProductlistFilter productData={data} />
+      <ProductlistFilter productData={data}/>
      </>
   )
 

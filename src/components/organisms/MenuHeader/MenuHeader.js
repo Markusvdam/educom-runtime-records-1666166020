@@ -5,13 +5,15 @@ import Hamburgermenu from './../../atoms/Hamburgermenu';
 import Closemenu from "./../../atoms/Closemenu";
 import Logo from './../../atoms/Logo'
 import Cart from '../../atoms/Cart';
+import { useContext } from 'react';
+import { CartContext } from '../../../context/CartContext'
 
-const MenuHeader = ({ testID, menuData, cartData }) => {
+const MenuHeader = ({ testID, menuData }) => {
 
     const utils = ["MenuHeader"].join(" ")
     const [sidebar, setSidebar] = useState(false)
     const showSidebar = () => setSidebar(!sidebar)
-
+    const { cartData } = useContext(CartContext)
 
     return (
         <div data-testid={ testID } className={ utils }>
@@ -22,7 +24,7 @@ const MenuHeader = ({ testID, menuData, cartData }) => {
 
             {/* ----------------RIGHT---------------- */}
             <div className="right">
-            <Cart count={2}/>
+            <Link to="/cart"><Cart count={cartData.length}/></Link>
                 <>
                     <div className="navbar" onClick={showSidebar}>
                         <div to="../#" className='menu-bars'><Hamburgermenu /></div>

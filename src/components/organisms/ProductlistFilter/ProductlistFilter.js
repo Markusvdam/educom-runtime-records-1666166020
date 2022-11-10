@@ -5,7 +5,7 @@ import SearchHomepageFilter from './../../molecules/SearchHomepageFilter'
 import Productlist from './../Productlist'
 import PaginationShow from './../../atoms/PaginationShow'
 
-const ProductlistFilter = ({ testID, productData, onChangeSearch}) => {
+const ProductlistFilter = ({ testID, productData, onChangeSearch, cartData}) => {
     const utils = ["ProductlistFilter"].join(" ")
     
     let dataDisplay = productData
