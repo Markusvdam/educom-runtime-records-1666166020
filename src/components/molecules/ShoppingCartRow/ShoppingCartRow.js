@@ -2,7 +2,7 @@ import PropTypes from 'prop-types'
 import Label from './../../atoms/Label'
 import Delete from './../../atoms/Delete'
 import { useContext } from 'react'
-import { CartContext } from '../../../hooks/CartContext'
+import { CartContext } from '../../../context/CartContext'
 
 const ShoppingCartRow = ({ testID, productInfo}) => {
 

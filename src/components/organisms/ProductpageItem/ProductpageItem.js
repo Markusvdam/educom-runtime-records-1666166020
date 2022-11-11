@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types'
 import Label from './../../atoms/Label'
 import ButtonAdd from './../../atoms/ButtonAdd'
-import { CartContext } from '../../../hooks/CartContext'
+import { CartContext } from '../../../context/CartContext'
 import { useContext } from 'react'
 
 /// TODO: Define props

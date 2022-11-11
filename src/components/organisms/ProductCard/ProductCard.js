@@ -2,7 +2,7 @@ import PropTypes from 'prop-types'
 import Label from './../../atoms/Label'
 import ButtonAdd from '../../atoms/ButtonAdd'
 import { useContext } from 'react'
-import { CartContext } from '../../../hooks/CartContext'
+import { CartContext } from '../../../context/CartContext'
 import { Link } from "react-router-dom";
 
 const ProductCard = ({ testID, productInfo}) => {

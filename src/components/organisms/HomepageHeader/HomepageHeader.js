@@ -3,7 +3,7 @@ import ProductImageWithDisc from './../../molecules/ProductImageWithDisc'
 import Label from './../../atoms/Label'
 import Button from './../../atoms/Button'
 import ButtonAdd from './../../atoms/ButtonAdd'
-import { CartContext } from '../../../hooks/CartContext'
+import { CartContext } from '../../../context/CartContext'
 import { useContext } from 'react'
 import { Link } from "react-router-dom";
 

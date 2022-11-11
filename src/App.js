@@ -6,7 +6,8 @@ import { MenuData } from "./config/MenuData"
 import Home from "./components/pages/Home"
 import Productpage from "./components/pages/Productpage"
 import Cart from "./components/pages/Cart"
-import { CartContext } from "./hooks/CartContext"
+import { CartContext } from "./context/CartContext"
+import { SearchContext } from "./context/SearchContext"
 import { useState } from "react"
 import Footer from "./components/organisms/Footer"
 
@@ -23,11 +24,15 @@ const App = () => {
     }
   }
 
+  const [searchData, setSearchData] = useState([])
+
   const AppLayout = () => (
     <CartContext.Provider value={{cartData, setCartData, addItem}}>
-      <MenuHeader menuData={MenuData}/>
-      <Outlet />
-      <Footer />
+      <SearchContext.Provider value={{searchData, setSearchData}}>
+        <MenuHeader menuData={MenuData}/>
+        <Outlet />
+        <Footer />
+      </SearchContext.Provider>
     </CartContext.Provider>
   )
 

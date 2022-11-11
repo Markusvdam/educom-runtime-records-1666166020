@@ -2,7 +2,7 @@ import Footer from './../organisms/Footer'
 import ShoppingCartRow from './../molecules/ShoppingCartRow'
 import CurrencyFormatter from './../../config/CurrencyFormatter'
 import { useContext } from 'react'
-import { CartContext } from '../../hooks/CartContext'
+import { CartContext } from '../../context/CartContext'
 
 const Cart = ({data}) => {
 

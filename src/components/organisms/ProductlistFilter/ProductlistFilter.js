@@ -4,9 +4,12 @@ import EnvironmentSetting from './../../../../src/config/EnvironmentSetting.js'
 import SearchHomepageFilter from './../../molecules/SearchHomepageFilter'
 import Productlist from './../Productlist'
 import PaginationShow from './../../atoms/PaginationShow'
+import { useContext } from 'react'
+import { SearchContext } from "./../../../context/SearchContext"
 
-const ProductlistFilter = ({ testID, productData, onChangeSearch, cartData}) => {
+const ProductlistFilter = ({ testID, productData, onChangeSearch }) => {
     const utils = ["ProductlistFilter"].join(" ")
+    const { searchData, setSearchData } = useContext(SearchContext)
     
     let dataDisplay = productData
     const pageItemCount = EnvironmentSetting.pageItemCount
