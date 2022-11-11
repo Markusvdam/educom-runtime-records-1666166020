@@ -1,9 +1,11 @@
 import React from 'react'
 import MenuHeader from './MenuHeader'
+import { withRouter } from 'storybook-addon-react-router-v6';
 
 const MenuHeaderMeta = {
     title: "organisms/MenuHeader",
     component: MenuHeader,
+    decorators: [withRouter],
     argTypes: {
         testID: { table: { disable: true } },
         menuData: { name: "Menu data:" }

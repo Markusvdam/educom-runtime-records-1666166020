@@ -1,9 +1,11 @@
 import React from 'react'
 import ProductlistFilter from './ProductlistFilter'
+import { withRouter } from 'storybook-addon-react-router-v6';
 
 const ProductlistFilterMeta = {
     title: "organisms/ProductlistFilter",
     component: ProductlistFilter,
+    decorators: [withRouter],
     argTypes: {
         testID: { table: { disable: true } },
         productData: { name: "Data" }

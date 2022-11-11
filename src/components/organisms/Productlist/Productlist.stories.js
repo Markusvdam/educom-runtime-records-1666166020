@@ -1,9 +1,11 @@
 import React from 'react'
 import Productlist from './Productlist'
+import { withRouter } from 'storybook-addon-react-router-v6';
 
 const ProductlistMeta = {
     title: "organisms/Productlist",
     component: Productlist,
+    decorators: [withRouter],
     argTypes: {
         testID: { table: { disable: true } },
         productData: { name: "Data" }
