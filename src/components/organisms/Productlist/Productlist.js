@@ -15,7 +15,7 @@ const Productlist = ({ testID, productData}) => {
                         const productID = item.data.id
                         const itemData = item.data
                         return (
-                            <li key={i} className="product"><ProductCard productInfo={itemData} /></li>
+                            <li key={item.data.id} className="product"><ProductCard productInfo={itemData} /></li>
                         ); 
                     })}
                 </ul>

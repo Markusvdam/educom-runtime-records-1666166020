@@ -1,37 +1,43 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useContext } from 'react'
 import PropTypes from 'prop-types'
 import EnvironmentSetting from './../../../../src/config/EnvironmentSetting.js'
 import SearchHomepageFilter from './../../molecules/SearchHomepageFilter'
 import Productlist from './../Productlist'
 import PaginationShow from './../../atoms/PaginationShow'
-import { useContext } from 'react'
-import { SearchContext } from "./../../../context/SearchContext"
+import { useProductList } from "./../../../context/ProductListContext"
 
-const ProductlistFilter = ({ testID, productData, onChangeSearch }) => {
+const ProductlistFilter = ({ testID, productData }) => {
+
     const utils = ["ProductlistFilter"].join(" ")
-    const { searchData, setSearchData } = useContext(SearchContext)
     
-    let dataDisplay = productData
+    const [listData, setListData] = useProductList()
     const pageItemCount = EnvironmentSetting.pageItemCount
-    const [pageCount, setPageCount] = useState(Math.ceil(dataDisplay.length/pageItemCount))
+    const [pageCount, setPageCount] = useState(Math.ceil(listData.length/pageItemCount))
     const [sliced, setSliced] = useState([])
     const [page, setPage] = useState(1)
-    let searchTerm = ""
 
-    /// TODO FIX CLICK ON PAGE WHEN SEARCH = ACTIVE
     const handleChangePage = (page) =>{
         setPage(page)
-        setSliced(dataDisplay.slice((page-1)*pageItemCount, page*pageItemCount))
-        setPageCount(Math.ceil(dataDisplay.length/pageItemCount))
+        setSliced(listData.slice((page-1)*pageItemCount, page*pageItemCount))
+        setPageCount(Math.ceil(listData.length/pageItemCount))
     }
-
+ 
     useEffect(()=>{
         handleChangePage(1)
-    }, [])
+        //console.log(listData)
+    }, [listData])
 
+    useEffect(()=>{
+        localStorage.getItem("LISTDATA") ?
+        setListData(JSON.parse(localStorage.getItem("LISTDATA")))
+        :
+        setListData(productData)
+    }, [])
+    
     function onChangeSearch(event) {
-        searchTerm = event.target.value
-        dataDisplay = dataDisplay.filter(
+        let searchTerm = event.target.value
+        let searchData = productData
+        searchData = searchData.filter(
             (val)=>{
                 if (searchTerm == ""){
                     return productData
@@ -45,12 +51,13 @@ const ProductlistFilter = ({ testID, productData, onChangeSearch }) => {
                 }
             }
         )
+        setListData(searchData)
         handleChangePage(1)
     }
 
     return(
         <div data-testid={ testID } className={ utils }>
-            <SearchHomepageFilter onChangeSearch={onChangeSearch}/>
+            <SearchHomepageFilter onChangeSearch={onChangeSearch} productData={productData}/>
             <Productlist productData={sliced} />
             <div className='PaginationContainer'>
             <PaginationShow currentPage={page} pageCount={pageCount} onChangePage={handleChangePage} />

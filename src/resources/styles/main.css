@@ -544,8 +544,6 @@ a {
 .Save {
   background-color: var(--fg-base);
   color: var(--fg-white);
-  max-width: 56px;
-  min-width: 56px;
   width: 56px;
   height: 56px;
   border-radius: 28px;
@@ -557,6 +555,23 @@ a {
   font-size: 30px;
   width: 28px;
   height: 28px;
+}
+.Save .counter {
+  font-family: "main-text-bold", sans-serif;
+  position: relative;
+  background-color: var(--bg-highlight);
+  color: var(--fg-white);
+  width: 26px;
+  height: 26px;
+  border-radius: 13px;
+  top: -30px;
+  left: 36px;
+  text-align: center;
+  font-size: 15px;
+}
+.Save .counter p {
+  position: relative;
+  top: 2px;
 }
 
 .Save:hover {
@@ -811,6 +826,42 @@ a {
   border-width: 0;
   color: black;
   background-color: black;
+}
+
+.ShoppingCartTotal {
+  display: flex;
+  justify-content: center;
+}
+.ShoppingCartTotal .RowContainer {
+  max-width: 1200px;
+}
+@media (min-width: 900px) {
+  .ShoppingCartTotal .RowContainer {
+    min-width: 820px;
+  }
+}
+.ShoppingCartTotal .RowContainer .Row {
+  display: flex;
+  justify-content: space-between;
+  height: 170px;
+}
+.ShoppingCartTotal .RowContainer .Row .startrow {
+  gap: 35px;
+  display: flex;
+  align-items: center;
+}
+.ShoppingCartTotal .RowContainer .Row .endrow {
+  gap: 5px;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.ShoppingCartTotal .RowContainer .Row .endrow .Label {
+  position: relative;
+  transform: scale(1.25);
+}
+.ShoppingCartTotal .RowContainer .Row .endrow .Delete {
+  position: relative;
 }
 
 /*! Organisms */

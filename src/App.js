@@ -7,13 +7,16 @@ import Home from "./components/pages/Home"
 import Productpage from "./components/pages/Productpage"
 import Cart from "./components/pages/Cart"
 import { CartContext } from "./context/CartContext"
-import { SearchContext } from "./context/SearchContext"
+import { ProductListProvider } from "./context/ProductListContext"
 import { useState } from "react"
 import Footer from "./components/organisms/Footer"
 
 const App = () => {
 
+  //INITIAL LOAD OF DATABASE
   const [data, isLoaded] = useDatabase('records')
+
+  //CARTDATA & CONTEXT  >  TODO: VERWERKEN IN 
   const [cartData, setCartData] = useState([])
   const addItem = (id) => {
     if (cartData.find(object => object === id) == null) {
@@ -24,15 +27,13 @@ const App = () => {
     }
   }
 
-  const [searchData, setSearchData] = useState([])
-
   const AppLayout = () => (
     <CartContext.Provider value={{cartData, setCartData, addItem}}>
-      <SearchContext.Provider value={{searchData, setSearchData}}>
+      <ProductListProvider>
         <MenuHeader menuData={MenuData}/>
         <Outlet />
         <Footer />
-      </SearchContext.Provider>
+      </ProductListProvider>
     </CartContext.Provider>
   )
 

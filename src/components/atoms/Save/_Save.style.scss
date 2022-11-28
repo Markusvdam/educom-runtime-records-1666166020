@@ -1,8 +1,6 @@
 .Save {
   background-color: var(--fg-base);
   color: var(--fg-white);
-  max-width: 56px;
-  min-width: 56px;
   width: 56px;
   height: 56px;
   border-radius: 28px;
@@ -15,6 +13,25 @@
     width: 28px;
     height: 28px;
   }
+
+  .counter{
+    font-family: 'main-text-bold', sans-serif;
+    position: relative;
+    background-color: var(--bg-highlight);
+    color: var(--fg-white);
+    width: 26px;
+    height: 26px;
+    border-radius: 13px;
+    top: -30px;
+    left: 36px;
+    text-align: center;
+    font-size: 15px;
+    p{
+      position: relative;
+      top: 2px;
+    }
+  }
+
 }
 
 .Save:hover {

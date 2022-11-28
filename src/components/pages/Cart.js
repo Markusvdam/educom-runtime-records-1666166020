@@ -1,13 +1,20 @@
-import Footer from './../organisms/Footer'
 import ShoppingCartRow from './../molecules/ShoppingCartRow'
+import ShoppingCartTotal from './../molecules/ShoppingCartTotal'
 import CurrencyFormatter from './../../config/CurrencyFormatter'
 import { useContext } from 'react'
 import { CartContext } from '../../context/CartContext'
+import ButtonCheckout from './../atoms/ButtonCheckout'
 
 const Cart = ({data}) => {
 
   const { cartData } = useContext(CartContext)
   let total = 0;
+  const textButtonCheckout = "Checkout"
+
+  const checkoutStyle = {
+    transform: "scale(1)",
+    justifyContent: "center",
+  }
 
   return(
     <div>
@@ -24,11 +31,9 @@ const Cart = ({data}) => {
             )
         })
       }
+      <div><ShoppingCartTotal price={CurrencyFormatter(total)}/></div>
       <p>&nbsp;</p><p>&nbsp;</p>
-      <center>
-      <div><h2 className='h2'>Total: {CurrencyFormatter(total)}</h2></div>
-      </center>
-      <p>&nbsp;</p><p>&nbsp;</p>
+      <div style={checkoutStyle}><ButtonCheckout text={textButtonCheckout}/></div>
     </div>
   )
 }
