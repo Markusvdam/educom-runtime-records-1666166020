@@ -29,7 +29,7 @@ const exceptionClasses = [
     "y"
 ]
 
-    Button.propTypes = {
+Button.propTypes = {
     testID: PropTypes.string,
     exceptionType: PropTypes.oneOf(exceptionClasses),
     utilityClasses: PropTypes.arrayOf(PropTypes.oneOf(utilityClasses)),
