@@ -23,12 +23,7 @@ const Checkoutform = (props) => {
         const orderID = `${current.getDate()}${current.getMonth()+1}${current.getFullYear()}${current.getHours()}${current.getMinutes()}${current.getSeconds()}${current.getMilliseconds()}`
         const orderDetails = JSON.stringify(cartData)
         setOrder(orderID, fullName, email, address, city, zip, orderDetails)
-        alert("Order placed!");
-        setFullName('')
-        setEmail('')
-        setAddress('')
-        setCity('')
-        setZip('')
+        alert("Order placed!"); setFullName(''); setEmail(''); setAddress(''); setCity(''); setZip('')
     }
 
     return(
