@@ -1,0 +1,17 @@
+.ButtonSubmit {
+  input{
+    color: var(--fg-white);
+    background-color: var(--bg-highlight);
+    font-family: 'main-text-regular', sans-serif;
+    width: 125px;
+    height: 40px;
+    justify-content: left;
+    border-radius: 50px;
+    cursor: pointer;
+    border: none;
+    font-size: var(--font-size-1);
+  }
+  input:hover{
+    font-family: 'main-text-bold', sans-serif;
+  }
+}

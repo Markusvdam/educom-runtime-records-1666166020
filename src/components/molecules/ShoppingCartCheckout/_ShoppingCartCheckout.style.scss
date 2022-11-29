@@ -1,0 +1,36 @@
+.ShoppingCartCheckout {
+  display: flex;
+  justify-content: center;
+
+  .RowContainer {
+    max-width: 1200px;
+    @media (min-width: 900px) {
+      min-width: 820px;
+    }
+
+    .Row {
+      display: flex;
+      justify-content: space-between;
+      height: 170px;
+
+      .startrow{
+        gap: 35px;
+        display: flex;
+        align-items: center;
+      }
+    
+      .endrow{
+        gap: 5px;
+        position: relative;
+        display: flex;
+        align-items: center;
+        
+        .ButtonCheckout{
+          position: relative;
+          transform: scale(1.5);
+          left: -220px;
+        }
+      }    
+    }
+  }
+}

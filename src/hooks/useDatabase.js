@@ -1,9 +1,9 @@
 import { useEffect, useState } from 'react'
-import { onSnapshot, query, collection } from "firebase/firestore"
+import { onSnapshot, query, collection, doc, setDoc } from "firebase/firestore"
 
 import { database } from "../config/firebase"
 
-const useDatabase = (content) => {
+export const useDatabase = (content) => {
 
     const [data, setData] = useState(null)
     const [isLoaded, setLoaded] = useState(false)
@@ -32,4 +32,16 @@ const useDatabase = (content) => {
 
 }
 
-export default useDatabase
+export const setOrder = async(orderID, fullname, email, address, city, ZIP, cartData) => {
+
+    //Add a new document in collection "orders"
+    await setDoc(doc(database, "orders", orderID), {
+        FullName: {fullname},
+        Email: {email},
+        Address: {address},
+        City: {city},
+        ZIP: {ZIP},
+        CartData: {cartData}
+    });
+
+}

@@ -1,0 +1,21 @@
+.Checkoutform {
+  display: grid;
+  max-width: 500px;
+  
+  .row{
+    padding-top: 15px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    .Label{
+      display: flex;
+      justify-content: flex-start;
+    }
+  }
+
+  .placeOrder{
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+  }
+
+}

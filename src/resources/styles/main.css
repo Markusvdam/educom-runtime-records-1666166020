@@ -750,6 +750,28 @@ a {
   color: var(--fg-white);
 }
 
+.Inputfield input {
+  border-radius: 12px;
+  border: none;
+  box-shadow: 0px 0px 1px 1px #979797;
+}
+
+.ButtonSubmit input {
+  color: var(--fg-white);
+  background-color: var(--bg-highlight);
+  font-family: "main-text-regular", sans-serif;
+  width: 125px;
+  height: 40px;
+  justify-content: left;
+  border-radius: 50px;
+  cursor: pointer;
+  border: none;
+  font-size: var(--font-size-1);
+}
+.ButtonSubmit input:hover {
+  font-family: "main-text-bold", sans-serif;
+}
+
 .ProductImageWithDisc {
   display: flex;
 }
@@ -862,6 +884,40 @@ a {
 }
 .ShoppingCartTotal .RowContainer .Row .endrow .Delete {
   position: relative;
+}
+
+.ShoppingCartCheckout {
+  display: flex;
+  justify-content: center;
+}
+.ShoppingCartCheckout .RowContainer {
+  max-width: 1200px;
+}
+@media (min-width: 900px) {
+  .ShoppingCartCheckout .RowContainer {
+    min-width: 820px;
+  }
+}
+.ShoppingCartCheckout .RowContainer .Row {
+  display: flex;
+  justify-content: space-between;
+  height: 170px;
+}
+.ShoppingCartCheckout .RowContainer .Row .startrow {
+  gap: 35px;
+  display: flex;
+  align-items: center;
+}
+.ShoppingCartCheckout .RowContainer .Row .endrow {
+  gap: 5px;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.ShoppingCartCheckout .RowContainer .Row .endrow .ButtonCheckout {
+  position: relative;
+  transform: scale(1.5);
+  left: -220px;
 }
 
 /*! Organisms */
@@ -1328,4 +1384,23 @@ a {
 }
 .MenuHeader .right .nav-menu-items {
   width: 100%;
+}
+
+.Checkoutform {
+  display: grid;
+  max-width: 500px;
+}
+.Checkoutform .row {
+  padding-top: 15px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.Checkoutform .row .Label {
+  display: flex;
+  justify-content: flex-start;
+}
+.Checkoutform .placeOrder {
+  padding-top: 20px;
+  display: flex;
+  justify-content: center;
 }/*# sourceMappingURL=main.css.map */

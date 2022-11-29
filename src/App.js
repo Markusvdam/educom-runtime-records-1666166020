@@ -1,11 +1,12 @@
 import "./resources/styles/main.css"
-import { useDatabase } from "./hooks"
+import { useDatabase } from "./hooks/useDatabase"
 import { Outlet, createBrowserRouter, RouterProvider } from "react-router-dom"
 import MenuHeader from "./components/organisms/MenuHeader"
 import { MenuData } from "./config/MenuData"
 import Home from "./components/pages/Home"
 import Productpage from "./components/pages/Productpage"
 import Cart from "./components/pages/Cart"
+import Checkout from "./components/pages/Checkout"
 import { CartContext } from "./context/CartContext"
 import { ProductListProvider } from "./context/ProductListContext"
 import { useState } from "react"
@@ -53,6 +54,10 @@ const App = () => {
         {
           path: "/cart",
           element: <Cart data={data} />
+        },
+        {
+          path: "/checkout",
+          element: <Checkout data={data} />
         }
       ]
     }
