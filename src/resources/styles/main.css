@@ -1107,6 +1107,7 @@ a {
   position: relative;
   max-width: 350px;
   transition: transform 0.17s;
+  padding-bottom: 35px;
 }
 .ProductCard .ProductCardImage {
   border-radius: 0.8rem;

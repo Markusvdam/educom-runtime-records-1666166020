@@ -26,9 +26,6 @@ const ProductCard = ({ testID, productInfo}) => {
                 <Link to={"../productpage/?product="+productInfo.id}><div className='ProductCardArtist'>{productInfo.artist}</div></Link>
                     <div className='ProductCardAdd' onClick={() =>addItem(productInfo.id)}><ButtonAdd text={textButtonAdd}/></div>
                 </div>
-
-                {/* TODO remove spacer later on, solve with spacing*/}
-                <Link to={"../productpage/?product="+productInfo.id}><div className='spacer'></div></Link>
             </div>
         </div>
     )

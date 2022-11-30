@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { onSnapshot, query, collection, doc, setDoc } from "firebase/firestore"
+import { onSnapshot, query, collection, doc, setDoc, addDoc } from "firebase/firestore"
 
 import { database } from "../config/firebase"
 
@@ -29,13 +29,12 @@ export const useDatabase = (content) => {
     }, [content] )
 
     return [data, isLoaded]
-
 }
 
-export const setOrder = async(orderID, fullname, email, address, city, ZIP, cartData) => {
+export const setOrder = async(fullname, email, address, city, ZIP, cartData) => {
 
     //Add a new document in collection "orders"
-    await setDoc(doc(database, "orders", orderID), {
+    await addDoc(collection(database, "orders"), {
         FullName: {fullname},
         Email: {email},
         Address: {address},
@@ -43,5 +42,4 @@ export const setOrder = async(orderID, fullname, email, address, city, ZIP, cart
         ZIP: {ZIP},
         CartData: {cartData}
     });
-
 }

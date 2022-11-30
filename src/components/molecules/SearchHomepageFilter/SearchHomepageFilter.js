@@ -7,13 +7,13 @@ import { useProductList } from "./../../../context/ProductListContext"
 const SearchHomepageFilter = ({ testID, onChangeSearch, productData}) => {
 
     const utils = ["SearchHomepageFilter"].join(" ")
-    const [listDataX, setListDataX] = useProductList()
+    const [listData, setListData] = useProductList()
 
     function saveToStorage(){
         localStorage.getItem("LISTDATA") ?
             localStorage.clear()
         :
-        localStorage.setItem("LISTDATA", JSON.stringify(listDataX))
+        localStorage.setItem("LISTDATA", JSON.stringify(listData))
     }
 
     return(

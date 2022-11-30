@@ -8,10 +8,10 @@ export function useProductList(){
 
 export const ProductListProvider = ({children}) => {
 
-  const [listDataX, setListDataX] = useState([])
+  const [listData, setListData] = useState([])
 
   return (
-    <ProductListContext.Provider value={[listDataX, setListDataX]}>
+    <ProductListContext.Provider value={[listData, setListData]}>
       {children}
     </ProductListContext.Provider>
   )
