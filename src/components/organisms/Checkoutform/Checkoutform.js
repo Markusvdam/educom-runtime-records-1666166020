@@ -28,12 +28,29 @@ const Checkoutform = (props) => {
     return(
         <div data-testid={ props.testID } className={ utils }>
             <form onSubmit={handleSubmit}>
-                <div className='row'><Label text='Full Name: '/><Inputfield type='text' name='Name' value={fullName} onChange={(e) => setFullName(e.target.value)} /></div>
-                <div className='row'><Label text='Email: '/><Inputfield type='email' name='Email' value={email} onChange={(e) => setEmail(e.target.value)} /></div>
-                <div className='row'><Label text='Address: '/><Inputfield type='text' name='Address' value={address} onChange={(e) => setAddress(e.target.value)} /></div>
-                <div className='row'><Label text='City: '/><Inputfield type='text' name='City' value={city} onChange={(e) => setCity(e.target.value)} /></div>
-                <div className='row'><Label text='Zip: '/><Inputfield type='text' name='Zip' value={zip} onChange={(e) => setZip(e.target.value)} /></div>
-                <div className='placeOrder'><ButtonSubmit text="Place order" /></div>
+                <div className='row'>
+                    <Label text='Full Name: '/>
+                    <Inputfield type='text' name='Name' value={fullName} onChange={(e) => setFullName(e.target.value)} />
+                </div>
+                <div className='row'>
+                    <Label text='Email: '/>
+                    <Inputfield type='email' name='Email' value={email} onChange={(e) => setEmail(e.target.value)} />
+                </div>
+                <div className='row'>
+                    <Label text='Address: '/>
+                    <Inputfield type='text' name='Address' value={address} onChange={(e) => setAddress(e.target.value)} />
+                </div>
+                <div className='row'>
+                    <Label text='City: '/>
+                    <Inputfield type='text' name='City' value={city} onChange={(e) => setCity(e.target.value)} />
+                </div>
+                <div className='row'>
+                    <Label text='Zip: '/>
+                    <Inputfield type='text' name='Zip' value={zip} onChange={(e) => setZip(e.target.value)} />
+                </div>
+                <div className='placeOrder'>
+                    <ButtonSubmit text="Place order" />
+                </div>
             </form>
         </div>
     )
