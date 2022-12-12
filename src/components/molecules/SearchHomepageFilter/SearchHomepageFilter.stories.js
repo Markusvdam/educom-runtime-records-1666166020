@@ -1,5 +1,6 @@
 import React from 'react'
 import SearchHomepageFilter from './SearchHomepageFilter'
+import { ProductListProvider } from "../../../context/ProductListContext"
 
 const SearchHomepageFilterMeta = {
     title: "molecules/SearchHomepageFilter",
@@ -10,7 +11,9 @@ const SearchHomepageFilterMeta = {
 }
 
 const testID = "SearchHomepageFilter-" + Math.floor(Math.random() * 90000) + 10000
-const Template = (args) => <SearchHomepageFilter {...args} />
+const Template = (args) => <ProductListProvider>
+                            <SearchHomepageFilter {...args} />
+                            </ProductListProvider>
 
 export const DefaultSearchHomepageFilter = Template.bind({})
 DefaultSearchHomepageFilter.args = {

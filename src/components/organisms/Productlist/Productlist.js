@@ -5,17 +5,16 @@ import { Link } from "react-router-dom";
 const Productlist = ({ testID, productData}) => {
 
     const utils = ["Productlist"].join(" ")
+    console.log(productData)
     
-
     return(
         <div data-testid={ testID } className={ utils }>
             <div className="ProductlistContainer">
                 <ul className="products">
-                    {productData.map((item, i) => {   
-                        const productID = item.data.id
+                    {productData.map((item, i) => { 
                         const itemData = item.data
                         return (
-                            <li key={item.data.id} className="product"><ProductCard productInfo={itemData} /></li>
+                            <li key={itemData.id} className="product"><ProductCard productInfo={itemData} /></li>
                         ); 
                     })}
                 </ul>

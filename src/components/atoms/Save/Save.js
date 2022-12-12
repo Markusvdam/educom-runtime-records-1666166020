@@ -9,7 +9,7 @@ const Save = ({ testID, productData }) => {
 
     const [listData, setListData] = useProductList()
     const [counterVisible, setCounterVisible] = useState()
-    const [count, setCount] = useState(listData.length)
+    const [count, setCount] = useState(0)
 
     useEffect(()=>{
         if (localStorage.getItem("LISTDATA")){

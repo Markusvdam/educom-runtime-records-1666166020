@@ -1,6 +1,7 @@
 import React from 'react'
 import ProductlistFilter from './ProductlistFilter'
 import { withRouter } from 'storybook-addon-react-router-v6';
+import { ProductListProvider } from "../../../context/ProductListContext"
 
 const ProductlistFilterMeta = {
     title: "organisms/ProductlistFilter",
@@ -13,7 +14,10 @@ const ProductlistFilterMeta = {
 }
 
 const testID = "ProductlistFilter-" + Math.floor(Math.random() * 90000) + 10000
-const Template = (args) => <ProductlistFilter {...args} />
+const Template = (args) => 
+                            <ProductListProvider>
+                                <ProductlistFilter {...args} />
+                            </ProductListProvider>
 
 export const DefaultProductlistFilter = Template.bind({})
 DefaultProductlistFilter.args = {

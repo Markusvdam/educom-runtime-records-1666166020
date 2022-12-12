@@ -1,4 +1,4 @@
-import { useState, useEffect, useContext } from 'react'
+import { useState, useEffect } from 'react'
 import PropTypes from 'prop-types'
 import EnvironmentSetting from './../../../../src/config/EnvironmentSetting.js'
 import SearchHomepageFilter from './../../molecules/SearchHomepageFilter'
@@ -12,7 +12,7 @@ const ProductlistFilter = ({ testID, productData }) => {
     
     const [listData, setListData] = useProductList()
     const pageItemCount = EnvironmentSetting.pageItemCount
-    const [pageCount, setPageCount] = useState(Math.ceil(listData.length/pageItemCount))
+    const [pageCount, setPageCount] = useState(1)
     const [sliced, setSliced] = useState([])
     const [page, setPage] = useState(1)
 
@@ -24,7 +24,6 @@ const ProductlistFilter = ({ testID, productData }) => {
  
     useEffect(()=>{
         handleChangePage(1)
-        //console.log(listData)
     }, [listData])
 
     useEffect(()=>{
